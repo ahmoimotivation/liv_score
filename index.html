@@ -118,32 +118,75 @@
         /* ==========================================
            【手机端专属优化 (Mobile Responsive)】
            ========================================== */
+        /* 成分卡片内部布局 */
+        .ingredient-card-inner {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+        .ingredient-card-inner img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+        .ingredient-card-inner .ingredient-text p {
+            margin: 0;
+        }
+
         @media (max-width: 600px) {
-            .container { 
-                box-shadow: none; 
-                border-radius: 0; 
+            .container {
+                box-shadow: none;
+                border-radius: 0;
             }
-            .page-view { 
-                padding: 15px 10px; /* 减少手机端左右留白，腾出空间 */
+            .page-view {
+                padding: 15px 12px;
             }
-            .hero h1 { 
-                font-size: 1.5rem; /* 稍微缩小大标题，避免折行太多 */
+            .hero h1 {
+                font-size: 1.5rem;
             }
-            .hero h2 { 
-                font-size: 1rem; 
+            .hero h2 {
+                font-size: 1rem;
             }
-            .vsl-section { 
-                margin-bottom: 20px; 
+            .vsl-section {
+                margin-bottom: 20px;
             }
-            .q-block { 
-                padding: 15px; 
+            .q-block {
+                padding: 15px;
             }
-            .btn { 
-                padding: 15px; 
-                font-size: 1.1rem; 
+            .btn {
+                padding: 15px;
+                font-size: 1.1rem;
             }
-            .price-tag { 
-                font-size: 1.8rem; 
+            .price-tag {
+                font-size: 1.8rem;
+            }
+            /* 成分卡片手机端：图片上方，文字下方，更易阅读 */
+            .ingredient-card-inner {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+            .ingredient-card-inner img {
+                width: 120px;
+                height: 120px;
+            }
+            .ingredient-card-inner .ingredient-text {
+                width: 100%;
+            }
+            .ingredient-card-inner .ingredient-text p:first-child {
+                text-align: center;
+                font-size: 1rem !important;
+            }
+            .ingredient-card-inner .ingredient-text p:last-child {
+                font-size: 0.93rem !important;
+                line-height: 1.9 !important;
+            }
+            /* 逻辑卡片文字在手机上更清晰 */
+            .logic-box p {
+                font-size: 0.95rem !important;
+                line-height: 1.95 !important;
             }
         }
     </style>
@@ -607,9 +650,9 @@
                         <h3 style="color:#154d45; text-align:center; margin-bottom:6px; font-size:1.15rem;">🌿 为什么 Master Liv 能做到"先消炎，再补肝"？</h3>
                         <p style="text-align:center; color:#888; font-size:0.88rem; margin-top:0; margin-bottom:20px;">两大核心成分，精准分工，协同修复</p>
                         <div style="background:#fffbf0; border:2px solid #f1c40f; border-radius:14px; padding:18px 20px; margin-bottom:14px;">
-                            <div style="display:flex; align-items:flex-start; gap:14px;">
-                                <img src="images/姜黄根 .jpg" alt="姜黄根 Turmeric Root" style="width:80px; height:80px; object-fit:cover; border-radius:10px; flex-shrink:0; border:2px solid #f1c40f;">
-                                <div>
+                            <div class="ingredient-card-inner">
+                                <img src="images/姜黄根 .jpg" alt="姜黄根 Turmeric Root" style="border:2px solid #f1c40f;">
+                                <div class="ingredient-text">
                                     <p style="margin:0 0 6px; font-weight:700; color:#d35400; font-size:0.98rem;">第一步：姜黄根（Turmeric Root）— 消炎</p>
                                     <p style="margin:0; color:#666; font-size:0.88rem; line-height:1.85;">
                                         姜黄根含有高浓度<strong>姜黄素（Curcumin）</strong>，是天然最强效的消炎成分之一。<br>
@@ -619,9 +662,9 @@
                             </div>
                         </div>
                         <div style="background:#f0faf8; border:2px solid #154d45; border-radius:14px; padding:18px 20px; margin-bottom:14px;">
-                            <div style="display:flex; align-items:flex-start; gap:14px;">
-                                <img src="images/奶蓟草 .jpg" alt="奶蓟草 Milk Thistle" style="width:80px; height:80px; object-fit:cover; border-radius:10px; flex-shrink:0; border:2px solid #154d45;">
-                                <div>
+                            <div class="ingredient-card-inner">
+                                <img src="images/奶蓟草 .jpg" alt="奶蓟草 Milk Thistle" style="border:2px solid #154d45;">
+                                <div class="ingredient-text">
                                     <p style="margin:0 0 6px; font-weight:700; color:#154d45; font-size:0.98rem;">第二步：奶蓟草（Milk Thistle）— 补肝</p>
                                     <p style="margin:0; color:#666; font-size:0.88rem; line-height:1.85;">
                                         奶蓟草含有<strong>水飞蓟素（Silymarin）</strong>，是全球医学界公认的护肝成分。<br>
@@ -708,9 +751,9 @@
                         <h3 style="color:#154d45; text-align:center; margin-bottom:6px; font-size:1.15rem;">🌿 为什么 Master Liv 能做到"先消炎，再补肝"？</h3>
                         <p style="text-align:center; color:#888; font-size:0.88rem; margin-top:0; margin-bottom:20px;">两大核心成分，精准分工，协同修复</p>
                         <div style="background:#fffbf0; border:2px solid #f1c40f; border-radius:14px; padding:18px 20px; margin-bottom:14px;">
-                            <div style="display:flex; align-items:flex-start; gap:14px;">
-                                <img src="images/姜黄根 .jpg" alt="姜黄根 Turmeric Root" style="width:80px; height:80px; object-fit:cover; border-radius:10px; flex-shrink:0; border:2px solid #f1c40f;">
-                                <div>
+                            <div class="ingredient-card-inner">
+                                <img src="images/姜黄根 .jpg" alt="姜黄根 Turmeric Root" style="border:2px solid #f1c40f;">
+                                <div class="ingredient-text">
                                     <p style="margin:0 0 6px; font-weight:700; color:#d35400; font-size:0.98rem;">第一步：姜黄根（Turmeric Root）— 消炎</p>
                                     <p style="margin:0; color:#666; font-size:0.88rem; line-height:1.85;">
                                         姜黄根含有高浓度<strong>姜黄素（Curcumin）</strong>，是天然最强效的消炎成分之一。<br>
@@ -720,9 +763,9 @@
                             </div>
                         </div>
                         <div style="background:#f0faf8; border:2px solid #154d45; border-radius:14px; padding:18px 20px; margin-bottom:14px;">
-                            <div style="display:flex; align-items:flex-start; gap:14px;">
-                                <img src="images/奶蓟草 .jpg" alt="奶蓟草 Milk Thistle" style="width:80px; height:80px; object-fit:cover; border-radius:10px; flex-shrink:0; border:2px solid #154d45;">
-                                <div>
+                            <div class="ingredient-card-inner">
+                                <img src="images/奶蓟草 .jpg" alt="奶蓟草 Milk Thistle" style="border:2px solid #154d45;">
+                                <div class="ingredient-text">
                                     <p style="margin:0 0 6px; font-weight:700; color:#154d45; font-size:0.98rem;">第二步：奶蓟草（Milk Thistle）— 补肝</p>
                                     <p style="margin:0; color:#666; font-size:0.88rem; line-height:1.85;">
                                         奶蓟草含有<strong>水飞蓟素（Silymarin）</strong>，是全球医学界公认的护肝成分。<br>
@@ -807,9 +850,9 @@
                         <h3 style="color:#154d45; text-align:center; margin-bottom:6px; font-size:1.15rem;">🌿 为什么 Master Liv 能做到"先消炎，再补肝"？</h3>
                         <p style="text-align:center; color:#888; font-size:0.88rem; margin-top:0; margin-bottom:20px;">两大核心成分，精准分工，协同修复</p>
                         <div style="background:#fffbf0; border:2px solid #f1c40f; border-radius:14px; padding:18px 20px; margin-bottom:14px;">
-                            <div style="display:flex; align-items:flex-start; gap:14px;">
-                                <img src="images/姜黄根 .jpg" alt="姜黄根 Turmeric Root" style="width:80px; height:80px; object-fit:cover; border-radius:10px; flex-shrink:0; border:2px solid #f1c40f;">
-                                <div>
+                            <div class="ingredient-card-inner">
+                                <img src="images/姜黄根 .jpg" alt="姜黄根 Turmeric Root" style="border:2px solid #f1c40f;">
+                                <div class="ingredient-text">
                                     <p style="margin:0 0 6px; font-weight:700; color:#d35400; font-size:0.98rem;">第一步：姜黄根（Turmeric Root）— 消炎</p>
                                     <p style="margin:0; color:#666; font-size:0.88rem; line-height:1.85;">
                                         姜黄根含有高浓度<strong>姜黄素（Curcumin）</strong>，是天然最强效的消炎成分之一。<br>
@@ -819,9 +862,9 @@
                             </div>
                         </div>
                         <div style="background:#f0faf8; border:2px solid #154d45; border-radius:14px; padding:18px 20px; margin-bottom:14px;">
-                            <div style="display:flex; align-items:flex-start; gap:14px;">
-                                <img src="images/奶蓟草 .jpg" alt="奶蓟草 Milk Thistle" style="width:80px; height:80px; object-fit:cover; border-radius:10px; flex-shrink:0; border:2px solid #154d45;">
-                                <div>
+                            <div class="ingredient-card-inner">
+                                <img src="images/奶蓟草 .jpg" alt="奶蓟草 Milk Thistle" style="border:2px solid #154d45;">
+                                <div class="ingredient-text">
                                     <p style="margin:0 0 6px; font-weight:700; color:#154d45; font-size:0.98rem;">第二步：奶蓟草（Milk Thistle）— 补肝</p>
                                     <p style="margin:0; color:#666; font-size:0.88rem; line-height:1.85;">
                                         奶蓟草含有<strong>水飞蓟素（Silymarin）</strong>，是全球医学界公认的护肝成分。<br>
