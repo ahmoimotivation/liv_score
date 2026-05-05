@@ -343,45 +343,65 @@
             <div class="q-block">
                 <h3>2. 生活习惯与症状 (自动诊断发炎风险)</h3>
                 
-                <label class="q-title">1. 你是否经常熬夜，平均睡眠时间少于7小时？</label>
-                <label class="radio-label"><input type="radio" name="q1" value="0" required> 是的，经常熬夜</label>
-                <label class="radio-label"><input type="radio" name="q1" value="10"> 不是，作息规律</label>
+                <label class="q-title">1. 你的睡眠状况？（平均每晚睡眠时间 / 入睡时间）</label>
+                <label class="radio-label"><input type="radio" name="q1" value="0" required> 几乎每天都熬夜，凌晨后才睡</label>
+                <label class="radio-label"><input type="radio" name="q1" value="3"> 一周 3-5 天熬夜（超过 12 点）</label>
+                <label class="radio-label"><input type="radio" name="q1" value="7"> 偶尔熬夜（一周 1-2 次）</label>
+                <label class="radio-label"><input type="radio" name="q1" value="10"> 几乎不熬夜，11 点前入睡</label>
 
-                <label class="q-title" style="margin-top: 20px;">2. 你每周应酬或饮酒的频率是否超过2次？</label>
-                <label class="radio-label"><input type="radio" name="q2" value="0" required> 是的，经常应酬/喝酒</label>
-                <label class="radio-label"><input type="radio" name="q2" value="10"> 不是，很少或不喝</label>
+                <label class="q-title" style="margin-top: 20px;">2. 你的应酬 / 饮酒频率？</label>
+                <label class="radio-label"><input type="radio" name="q2" value="0" required> 几乎每天都喝</label>
+                <label class="radio-label"><input type="radio" name="q2" value="3"> 每周 3 次以上</label>
+                <label class="radio-label"><input type="radio" name="q2" value="7"> 偶尔（每周 1-2 次）</label>
+                <label class="radio-label"><input type="radio" name="q2" value="10"> 几乎不喝</label>
 
-                <label class="q-title" style="margin-top: 20px;">3. 饮食中是否经常包含高油、煎炸或加工食品？</label>
-                <label class="radio-label"><input type="radio" name="q3" value="0" required> 是的，经常吃</label>
-                <label class="radio-label"><input type="radio" name="q3" value="10"> 不是，饮食清淡为主</label>
+                <label class="q-title" style="margin-top: 20px;">3. 你吃高油、煎炸、加工食品的频率？</label>
+                <label class="radio-label"><input type="radio" name="q3" value="0" required> 几乎每餐都有</label>
+                <label class="radio-label"><input type="radio" name="q3" value="3"> 经常吃（每周 4 次以上）</label>
+                <label class="radio-label"><input type="radio" name="q3" value="7"> 偶尔吃（每周 1-2 次）</label>
+                <label class="radio-label"><input type="radio" name="q3" value="10"> 几乎不吃，饮食清淡</label>
 
-                <label class="q-title" style="margin-top: 20px;">4. 是否经常感到疲惫不堪，睡够了还是觉得累？</label>
-                <label class="radio-label"><input type="radio" name="q4" value="0" required> 是的，总是很累</label>
-                <label class="radio-label"><input type="radio" name="q4" value="10"> 不是，精神不错</label>
+                <label class="q-title" style="margin-top: 20px;">4. 你的疲劳程度？（睡饱了还是觉得累）</label>
+                <label class="radio-label"><input type="radio" name="q4" value="0" required> 每天都很累，无精打采</label>
+                <label class="radio-label"><input type="radio" name="q4" value="3"> 经常觉得累</label>
+                <label class="radio-label"><input type="radio" name="q4" value="7"> 偶尔会累</label>
+                <label class="radio-label"><input type="radio" name="q4" value="10"> 精神不错，很少累</label>
 
-                <label class="q-title" style="margin-top: 20px;">5. 是否有定期运动的习惯（每周至少3次让身体出汗）？</label>
-                <label class="radio-label"><input type="radio" name="q5" value="10" required> 是的，有运动习惯</label>
-                <label class="radio-label"><input type="radio" name="q5" value="0"> 没有，很少运动</label>
+                <label class="q-title" style="margin-top: 20px;">5. 你的运动频率？（让身体出汗的运动）</label>
+                <label class="radio-label"><input type="radio" name="q5" value="10" required> 每周 4 次以上</label>
+                <label class="radio-label"><input type="radio" name="q5" value="7"> 每周 2-3 次</label>
+                <label class="radio-label"><input type="radio" name="q5" value="3"> 每周 1 次</label>
+                <label class="radio-label"><input type="radio" name="q5" value="0"> 几乎不运动</label>
 
-                <label class="q-title" style="margin-top: 20px;">6. 你的体型是否偏向"中心型肥胖"（肚子大、内脏脂肪高）？</label>
-                <label class="radio-label"><input type="radio" name="q6" value="0" required> 是的，肚子偏大</label>
-                <label class="radio-label"><input type="radio" name="q6" value="10"> 不是，体型匀称</label>
+                <label class="q-title" style="margin-top: 20px;">6. 你的体型 / 腰围状况？</label>
+                <label class="radio-label"><input type="radio" name="q6" value="0" required> 中心型肥胖明显（大肚腩、内脏脂肪高）</label>
+                <label class="radio-label"><input type="radio" name="q6" value="3"> 肚子偏大</label>
+                <label class="radio-label"><input type="radio" name="q6" value="7"> 略有小腹</label>
+                <label class="radio-label"><input type="radio" name="q6" value="10"> 体型匀称，腰围正常</label>
 
-                <label class="q-title" style="margin-top: 20px;">7. 平时是否经常处于高压状态，容易情绪暴躁或焦虑（肝火旺）？</label>
-                <label class="radio-label"><input type="radio" name="q7" value="0" required> 是的，压力很大</label>
-                <label class="radio-label"><input type="radio" name="q7" value="10"> 不是，心态平和</label>
+                <label class="q-title" style="margin-top: 20px;">7. 你的压力 / 情绪状况？（易暴躁、焦虑 = 肝火旺）</label>
+                <label class="radio-label"><input type="radio" name="q7" value="0" required> 每天压力很大，情绪起伏明显</label>
+                <label class="radio-label"><input type="radio" name="q7" value="3"> 经常感到压力 / 焦躁</label>
+                <label class="radio-label"><input type="radio" name="q7" value="7"> 偶尔有压力</label>
+                <label class="radio-label"><input type="radio" name="q7" value="10"> 心态平和</label>
 
-                <label class="q-title" style="margin-top: 20px;">8. 是否经常出现消化不良、胃胀气或食欲不振？</label>
-                <label class="radio-label"><input type="radio" name="q8" value="0" required> 是的，经常肠胃不适</label>
-                <label class="radio-label"><input type="radio" name="q8" value="10"> 不是，消化很好</label>
+                <label class="q-title" style="margin-top: 20px;">8. 你的消化状况？（胃胀气、消化不良、食欲不振）</label>
+                <label class="radio-label"><input type="radio" name="q8" value="0" required> 每天都有不适</label>
+                <label class="radio-label"><input type="radio" name="q8" value="3"> 经常发生</label>
+                <label class="radio-label"><input type="radio" name="q8" value="7"> 偶尔发生</label>
+                <label class="radio-label"><input type="radio" name="q8" value="10"> 消化很好，无明显问题</label>
 
-                <label class="q-title" style="margin-top: 20px;">9. 是否有长期服用西药（降压药、止痛药等）的习惯？</label>
-                <label class="radio-label"><input type="radio" name="q9" value="0" required> 是的，长期服药</label>
-                <label class="radio-label"><input type="radio" name="q9" value="10"> 不是，很少吃药</label>
+                <label class="q-title" style="margin-top: 20px;">9. 你长期服西药的情况？（降压、降糖、止痛、安眠等）</label>
+                <label class="radio-label"><input type="radio" name="q9" value="0" required> 长期服用 2 种以上</label>
+                <label class="radio-label"><input type="radio" name="q9" value="3"> 长期服用 1 种</label>
+                <label class="radio-label"><input type="radio" name="q9" value="7"> 偶尔吃药（如止痛药）</label>
+                <label class="radio-label"><input type="radio" name="q9" value="10"> 几乎不吃药</label>
 
-                <label class="q-title" style="margin-top: 20px;">10. 近期体检，肝指数(ALT/AST)或胆固醇是否处于红灯/偏高？</label>
-                <label class="radio-label"><input type="radio" name="q10" value="0" required> 是的，偏高/有脂肪肝</label>
-                <label class="radio-label"><input type="radio" name="q10" value="10"> 正常 / 不清楚</label>
+                <label class="q-title" style="margin-top: 20px;">10. 近期体检，肝指数(ALT/AST)或胆固醇状况？</label>
+                <label class="radio-label"><input type="radio" name="q10" value="0" required> 偏高 / 已有脂肪肝</label>
+                <label class="radio-label"><input type="radio" name="q10" value="3"> 接近上限 / 边缘值</label>
+                <label class="radio-label"><input type="radio" name="q10" value="7"> 不清楚 / 没体检</label>
+                <label class="radio-label"><input type="radio" name="q10" value="10"> 正常，在标准范围内</label>
             </div>
 
             <div class="q-block">
@@ -471,6 +491,7 @@
             return;
         }
 
+        document.getElementById('view-vsl').classList.remove('active-view');
         document.getElementById('view-quiz').classList.remove('active-view');
         document.getElementById('loading').style.display = 'block';
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -501,7 +522,33 @@
             }
         }
 
-        const liverAge = Math.round(80 - totalScore * 0.5);
+        // ── Q10 一票否决：体检红字直接 cap 总分 ──
+        // Q10 = 0  (偏高/有脂肪肝) → 总分 cap 在 50  → 强制落红
+        // Q10 = 3  (接近上限/边缘值) → 总分 cap 在 80  → 至少落黄
+        // 这反映医学事实：肝指数已经红字的人不该被归到绿色保养期
+        if (qValues.q10 === 0) {
+            totalScore = Math.min(totalScore, 50);
+        } else if (qValues.q10 === 3) {
+            totalScore = Math.min(totalScore, 80);
+        }
+
+        // 肝龄 = 实际年龄 + offset，offset 由 totalScore (0-100) 决定
+        // - score ≤ 50  → +15～20 岁  (高风险，发炎期)
+        // - score 51-80 → +5～10 岁   (中风险，亚健康)
+        // - score > 80  → -2 ～ +2 岁 (低风险，保养期)
+        const userAgeNum = parseInt(document.getElementById('userAge').value) || 40;
+        let liverAgeOffset;
+        if (totalScore <= 50) {
+            // score 0-50 → offset 20 → 15 (越低越严重)
+            liverAgeOffset = 20 - Math.round((totalScore / 50) * 5);
+        } else if (totalScore <= 80) {
+            // score 51-80 → offset 10 → 5
+            liverAgeOffset = 10 - Math.round(((totalScore - 51) / 29) * 5);
+        } else {
+            // score 81-100 → offset 2 → -2
+            liverAgeOffset = 2 - Math.round(((totalScore - 81) / 19) * 4);
+        }
+        const liverAge = Math.max(20, userAgeNum + liverAgeOffset);  // 不能低于 20 岁
 
         const formData = new FormData();
         formData.append('userName', userName);
@@ -526,7 +573,7 @@
 
         const recommendedBoxes = totalScore <= 50 ? 7 : 4;
         const riskLabel = totalScore <= 50 ? '超速老化' : (totalScore <= 80 ? '肝脏比实际年龄老了 5～8 岁' : '肝龄状态良好');
-        let waMessage = `Hi，我是 ${userName}。\n我刚做完《肝龄测试》，我的肝龄评估结果是：${liverAge} 岁。\n报告显示我「${riskLabel}」。\n\n我的现状：${currentSituation}\n我想达成的目标：${outcome}\n\n报告推荐我拿 ${recommendedBoxes} 盒，请问现在有什么优惠？`;
+        let waMessage = `Hi 健康顾问，我是 ${userName}，刚做完《肝龄测试》。\n我的肝龄是 ${liverAge} 岁，目前状况是「${currentSituation}」。\n我想达成的目标：${outcome}。\n\n想跟你做一次 1 对 1 健康咨询，看看我适合怎么搭配（饮食 / 习惯 / 营养品）改善。`;
         let waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`;
 
         const resultContainer = document.getElementById('dynamic-result-content');
@@ -575,6 +622,467 @@
         </div>`;
         // ─────────────────────────────────────────────────────────────
 
+        // ── 客制化行动方案 generator (基于 q1-q10 的高风险信号 + big1/big2/big3) ──
+        const freeActionMap = {
+            q1: { issue: "经常熬夜",   action: "今晚开始 23:00 前关灯入睡",                     why: "肝脏的修复黄金时段是 23:00～凌晨 3:00" },
+            q2: { issue: "经常应酬饮酒", action: "把应酬频率压到每周 1 次以内（先从减半开始）",       why: "酒精全部由肝脏代谢，每一次都是直接消耗" },
+            q3: { issue: "高油煎炸饮食", action: "三餐改清淡（蒸煮代替煎炸，外食选清汤面）",          why: "高油食物会让肝脏不停加班代谢脂肪" },
+            q4: { issue: "睡够还累",     action: "睡前 1 小时停手机 + 不吃宵夜",                  why: "肝脏在睡眠中工作，质量比时长更重要" },
+            q5: { issue: "缺乏运动",     action: "每天 30 分钟快走（饭后 30 分钟最佳）",            why: "肌肉运动能直接消耗内脏脂肪" },
+            q6: { issue: "腹部肥胖",     action: "戒掉含糖饮料 + 白米改糙米/燕麦",                 why: "中心型肥胖 = 内脏脂肪积压 = 脂肪肝主要源头" },
+            q7: { issue: "高压焦虑",     action: "每天 10 分钟深呼吸或散步放空",                   why: "压力会直接刺激肝脏发炎" },
+            q8: { issue: "消化不良",     action: "饭前喝温水 + 细嚼慢咽（每口 30 下）",            why: "消化系统失衡会加重肝脏负担" },
+            q9: { issue: "长期服用西药", action: "下次复诊时跟主治医生谈调整剂量或方案的可能",        why: "所有药物都要经过肝脏代谢" },
+            q10:{ issue: "肝指数偏高",   action: "把上一次的体检报告拍照存档，3 个月后复检对比",      why: "数字会说话，不监测就不知道有没有进步" }
+        };
+
+        // 抓出高风险题目（value === 0），最多取前 3 件免费行动
+        const personalizedFreeActions = [];
+        for (let i = 1; i <= 10; i++) {
+            if (qValues['q' + i] === 0 && freeActionMap['q' + i]) {
+                personalizedFreeActions.push(freeActionMap['q' + i]);
+            }
+            if (personalizedFreeActions.length >= 3) break;
+        }
+
+        // 如果完全没有高风险（green），就给 3 件通用维护建议
+        const defaultGreenActions = [
+            { issue: "日常防护", action: "保持规律作息 + 早睡（23:00 前）",       why: "肝脏修复黄金时段必须把握" },
+            { issue: "饮食习惯", action: "每周至少 3 餐清淡（蒸煮为主）",          why: "减少肝脏代谢脂肪的负担" },
+            { issue: "定期监测", action: "每 6～12 个月做一次肝指数体检",          why: "早期发现是最好的保养" }
+        ];
+        const finalFreeActions = personalizedFreeActions.length > 0 ? personalizedFreeActions : defaultGreenActions;
+
+        const obstacleNote = {
+            "工作忙应酬多无法控制作息":  "（你提到「工作忙、应酬多」→ 下面 3 件每天加起来不超过 15 分钟，从最容易的那一件先做起）",
+            "试过其他纯补肝产品没效":    "（你提到「试过其他补肝产品没效」→ 关键不是单一补品，而是【先消炎】这一步——大部分人都跳过了）",
+            "缺乏健康知识不知从何下手":  "（你提到「不知道从何下手」→ 下面这 3 件按顺序执行就好，从第 1 项开始，不需要任何专业知识）"
+        };
+        const big3Value = document.getElementById('big3').value;
+        const obstacleNoteText = obstacleNote[big3Value] || "";
+
+        const buildActionPlanHtml = (riskColor, supplementCopy) => {
+            const colorMap = {
+                red:    { bg: "#fff8f3", border: "#e74c3c", header: "#c0392b", numBg: "#e74c3c" },
+                yellow: { bg: "#fffbf0", border: "#e67e22", header: "#d35400", numBg: "#e67e22" },
+                green:  { bg: "#f0fff5", border: "#27ae60", header: "#27ae60", numBg: "#27ae60" }
+            };
+            const c = colorMap[riskColor];
+            const actionItems = finalFreeActions.map((a, idx) => `
+                <div style="display:flex; align-items:flex-start; gap:12px; padding:14px 0; border-bottom:1px dashed #e8e8e8;">
+                    <div style="flex-shrink:0; width:30px; height:30px; border-radius:50%; background:${c.numBg}; color:white; font-weight:800; display:flex; align-items:center; justify-content:center; font-size:0.95rem;">${idx + 1}</div>
+                    <div style="flex:1;">
+                        <p style="margin:0 0 4px; font-weight:700; color:#222; font-size:0.98rem;">针对你的「${a.issue}」</p>
+                        <p style="margin:0 0 4px; color:#444; font-size:0.93rem; line-height:1.7;">👉 ${a.action}</p>
+                        <p style="margin:0; color:#888; font-size:0.82rem; font-style:italic;">为什么：${a.why}</p>
+                    </div>
+                </div>
+            `).join('');
+            return `
+                <div style="background:${c.bg}; border:2px solid ${c.border}; border-radius:14px; padding:22px; margin:24px 0;">
+                    <p style="margin:0 0 6px; font-weight:800; color:${c.header}; font-size:1.1rem;">🛠️ ${userName}，根据你的回答，这是接下来 7 天该做的事</p>
+                    ${obstacleNoteText ? `<p style="margin:0 0 14px; color:#666; font-size:0.85rem; line-height:1.6; background:#fff; padding:8px 12px; border-radius:8px; border-left:3px solid ${c.border};">${obstacleNoteText}</p>` : ''}
+                    <p style="margin:8px 0 4px; font-weight:700; color:#444; font-size:0.92rem;">✅ 4 件你今天就可以开始的事 — 前 3 件完全免费：</p>
+                    ${actionItems}
+                    <div style="display:flex; align-items:flex-start; gap:12px; padding:14px 0 4px;">
+                        <div style="flex-shrink:0; width:30px; height:30px; border-radius:50%; background:#154d45; color:white; font-weight:800; display:flex; align-items:center; justify-content:center; font-size:0.95rem;">4</div>
+                        <div style="flex:1;">
+                            <p style="margin:0 0 4px; font-weight:700; color:#154d45; font-size:0.98rem;">第 4 件：让肝脏先「消炎」，再「补肝」</p>
+                            <p style="margin:0 0 4px; color:#444; font-size:0.93rem; line-height:1.7;">👉 ${supplementCopy}</p>
+                            <p style="margin:0; color:#888; font-size:0.82rem; font-style:italic;">为什么：发炎中的肝脏吸收不了一般补品，要先扑灭炎症 → 才能真正修复</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+        };
+        // ─────────────────────────────────────────────────────────────
+
+        // ── 动态困难句 (基于 big3 + qValues) ──────────────────────────
+        const getDifficultyLine = () => {
+            const big3Map = {
+                "工作忙应酬多无法控制作息":  "你工作忙、应酬多，要完全改作息和戒酒，确实难。",
+                "试过其他纯补肝产品没效":    "你说试过补肝品没效 —— 因为问题不在「补」，是在炎症没先处理。",
+                "缺乏健康知识不知从何下手":  "你说不知道从何下手 —— 不用一次全做，从最简单那项开始就好。"
+            };
+            if (big3Map[big3Value]) return big3Map[big3Value];
+            if (qValues.q2 <= 3 && qValues.q1 <= 3) return "应酬场合、晚睡习惯，要一刀切戒掉，我懂没那么容易。";
+            if (qValues.q5 <= 3 && qValues.q7 <= 3) return "工作压力大到下班只剩躺平的力气，要再去运动确实辛苦。";
+            return "要把这 6 件事 100% 做到，对一般人确实不容易。";
+        };
+
+        // ── 动态 benefit 句 (基于 big2) ───────────────────────────────
+        const getBenefitLine = () => {
+            const big2BenefitMap = {
+                "降低并稳定肝指数":    "· 肝指数下降速度比单做生活改善快 1～2 倍<br>· 3 个月复检看得到数字变化",
+                "消除内脏脂肪":        "· 加速代谢内脏脂肪<br>· 腰围、体重变化看得到，不会做白工",
+                "改善严重疲劳":        "· 肝脏发炎先平息 → 1～2 周内感觉不那么累<br>· 身体反馈快，更容易坚持下去",
+                "排毒退火改善气色":    "· 排毒效率提升 → 气色、口气、睡眠改善看得见<br>· 整个人状态跟着轻盈"
+            };
+            return big2BenefitMap[outcome] || "· 让肝脏发炎先平息下来<br>· 营养吸收效率提升，努力不白做";
+        };
+
+        // ── 段 4：30 天自然护肝改善计划 (6 大方向, dynamic) ──────────
+        const buildLifestylePlan = (riskColor) => {
+            const colorMap = {
+                red:    { header: "#c0392b", numBg: "#e74c3c", titleBg: "#fff8f3" },
+                yellow: { header: "#d35400", numBg: "#e67e22", titleBg: "#fffbf0" },
+                green:  { header: "#1e7e34", numBg: "#27ae60", titleBg: "#f0fff5" }
+            };
+            const c = colorMap[riskColor];
+            const isGreen = (riskColor === 'green');
+
+            // 4.1 饮食改善
+            const dietItems = [];
+            if (qValues.q3 <= 3) dietItems.push({ tag: "针对你「高油煎炸饮食」", todo: "戒掉 5 样：油炸、烧烤、糕点、含糖饮料、加工肉。每天加 3 样：深绿色蔬菜（西兰花、羽衣甘蓝）、莓果（蓝莓、草莓）、绿茶。" });
+            if (qValues.q6 <= 3) dietItems.push({ tag: "针对你「腹部肥胖」", todo: "白米改糙米或燕麦；早餐加一颗水煮蛋；戒含糖饮料（100% 果汁也算）。" });
+            if (currentSituation === "体检发现肝指数/胆固醇偏高") dietItems.push({ tag: "针对你「肝指数偏高」", todo: "每天 1500ml 温水 + 早晨空腹喝柠檬温水，帮肝脏冲走代谢物。" });
+            if (currentSituation === "长期吃药担心引发肝炎") dietItems.push({ tag: "针对你「长期服药」", todo: "每餐至少一份深绿色蔬菜，抗氧化物对抗药物代谢压力。" });
+            if (outcome === "消除内脏脂肪") dietItems.push({ tag: "针对你的目标「消除内脏脂肪」", todo: "晚餐改在 7pm 前吃完；进阶可试 16:8 轻断食（早 11am、晚 7pm 内吃完）。" });
+            if (dietItems.length === 0) dietItems.push({ tag: "维持健康饮食", todo: "三餐清淡（蒸煮代替煎炸），每天 1 份绿叶蔬菜 + 1500ml 温水。" });
+
+            // 4.2 作息与睡眠
+            const sleepItems = [];
+            if (qValues.q1 <= 3) sleepItems.push({ tag: "针对你「经常熬夜」", todo: "23:00 前关灯入睡（肝脏修复黄金时段是 23:00～凌晨 3:00），手机充电放卧室外。" });
+            if (qValues.q4 <= 3) sleepItems.push({ tag: "针对你「睡够还累」", todo: "睡前 1 小时停所有屏幕；不吃宵夜（睡眠中肝脏在工作，吃宵夜 = 让它加班）。" });
+            if (outcome === "改善严重疲劳") sleepItems.push({ tag: "针对你的目标「改善严重疲劳」", todo: "周末补眠不超过 2 小时，否则打乱生理时钟，反而更累。" });
+            if (sleepItems.length === 0) sleepItems.push({ tag: "维持规律作息", todo: "尽量 23:00 前睡，每天睡满 7 小时，周末作息跟平日相差不超过 1 小时。" });
+
+            // 4.3 运动方案
+            const exerciseItems = [];
+            if (qValues.q5 <= 3) exerciseItems.push({ tag: "针对你「缺乏运动」", todo: "起步：每天饭后快走 15 分钟（这是燃烧内脏脂肪最有效的时段）。" });
+            if (qValues.q6 <= 3) exerciseItems.push({ tag: "针对你「腹部肥胖」", todo: "进阶：每周 3 次 20 分钟 HIIT（高强度间歇）—— 比慢跑省时 3 倍。" });
+            if (outcome === "消除内脏脂肪") exerciseItems.push({ tag: "针对你的目标「消除内脏脂肪」", todo: "加入「核心训练」棒式 + 卷腹，每天 5 分钟，直接缩小腰围。" });
+            if (exerciseItems.length === 0) exerciseItems.push({ tag: "维持运动习惯", todo: "每天饭后散步 20～30 分钟，每周至少 150 分钟中等强度运动。" });
+
+            // 4.4 监测与追踪 (大家都显示)
+            const monitorItems = [
+                { tag: "复检肝指数", todo: "3 个月后复检 ALT、AST、GGT、胆固醇 —— 数字会告诉你身体的真相。" },
+                { tag: "每周自我量测", todo: "每周日早晨同一时间称体重 + 量腰围（吐气时量肚脐位置）。" },
+                { tag: "1 张纸的健康日记", todo: "记录：日期 / 睡眠时间 / 三餐内容 / 体重 / 腰围 —— 每周看一次趋势。" }
+            ];
+
+            const renderItem = (item) => `
+                <div style="padding:10px 0; border-bottom:1px dashed #ececec;">
+                    <p style="margin:0 0 4px; font-weight:700; color:#222; font-size:0.92rem;">📍 ${item.tag}</p>
+                    <p style="margin:0; color:#444; font-size:0.9rem; line-height:1.75;">👉 ${item.todo}</p>
+                </div>
+            `;
+
+            const renderSection = (num, title, items) => {
+                // green 顾客份量减半（每节最多 2 项）
+                const limit = isGreen ? Math.min(items.length, 2) : items.length;
+                return `
+                    <div style="background:#fff; border:1px solid #e0e0e0; border-radius:12px; padding:14px 18px; margin-bottom:12px;">
+                        <p style="margin:0 0 8px; font-weight:800; color:${c.header}; font-size:1rem;">4.${num} ${title}</p>
+                        ${items.slice(0, limit).map(renderItem).join('')}
+                    </div>
+                `;
+            };
+
+            const intro = isGreen
+                ? `${userName}，虽然你目前状态良好，但「保养」是日常功课。下面这 4 个方向，按你目前的回答帮你浓缩成轻量版：`
+                : `${userName}，根据你的 15 题回答，下面是为你量身设计的「30 天自然护肝改善计划」 —— 全部免费、可立即开始。每个方向只显示<strong>跟你状况相关</strong>的建议：`;
+
+            const lifestyleSectionNum = isGreen ? 3 : 4;
+            return `
+                <p style="margin:24px 0 8px; color:${c.header}; font-weight:800; font-size:1.05rem; letter-spacing:1px;">🌱 第 ${lifestyleSectionNum} 段 · 你的 30 天自然护肝改善计划</p>
+                <div style="background:${c.titleBg}; border:2px solid ${c.numBg}; border-radius:14px; padding:18px 20px; margin:6px 0 24px;">
+                    <p style="margin:0 0 16px; color:#444; font-size:0.93rem; line-height:1.75;">${intro}</p>
+                    ${renderSection(1, "饮食改善", dietItems)}
+                    ${renderSection(2, "作息与睡眠", sleepItems)}
+                    ${renderSection(3, "运动方案", exerciseItems)}
+                    ${renderSection(4, "监测与追踪", monitorItems)}
+                </div>
+            `;
+        };
+        // ─────────────────────────────────────────────────────────────
+
+        // ── 段 5：过渡桥（短 + customize, red/yellow/green 各一版）──
+        const buildTransitionBridge = (riskColor) => {
+            const difficulty = getDifficultyLine();
+            const benefit = getBenefitLine();
+
+            if (riskColor === 'green') {
+                return `
+                    <div style="background:linear-gradient(135deg,#f0fff5,#eafaf1); border:2px solid #27ae60; border-radius:14px; padding:20px 22px; margin:24px 0;">
+                        <p style="margin:0 0 12px; color:#1e7e34; font-weight:800; font-size:1rem; letter-spacing:1px;">🌉 第 4 段 · ${userName}，跟你说一句</p>
+                        <p style="margin:0 0 12px; color:#222; font-size:0.95rem; line-height:1.85;">
+                            你目前状态良好，恭喜。<br>
+                            但保养跟治疗不同 —— <strong>保养是「不让自己变差」</strong>。
+                        </p>
+                        <p style="margin:0 0 12px; color:#444; font-size:0.93rem; line-height:1.85;">
+                            ${difficulty}
+                        </p>
+                        <p style="margin:0 0 10px; color:#222; font-size:0.95rem; line-height:1.85;">
+                            如果你希望长期保有这个好状态，特别在熬夜、应酬、压力大的日子里多一层保护 ——<br>
+                            可以考虑搭配一份「先消炎、再补肝」的天然营养品，作为日常防护。
+                        </p>
+                        <p style="margin:0; color:#1e7e34; font-weight:700; font-size:0.95rem;">
+                            预防比治疗便宜 10 倍。
+                        </p>
+                    </div>
+                `;
+            }
+
+            // red + yellow 都用同一个明显黄色 palette (作为从 red/yellow 段 1-3 → teal 段 6 的过渡)
+            const headerColor = '#b9770e';
+            const bgGrad = 'linear-gradient(135deg,#fef9e7,#fcf3cf)';
+            const accent = '#f39c12';
+
+            return `
+                <div style="background:${bgGrad}; border:2px solid ${accent}; border-radius:14px; padding:20px 22px; margin:24px 0;">
+                    <p style="margin:0 0 12px; color:${headerColor}; font-weight:800; font-size:1rem; letter-spacing:1px;">🌉 第 5 段 · ${userName}，跟你说一句</p>
+                    <p style="margin:0 0 12px; color:#222; font-size:0.95rem; line-height:1.85;">
+                        把上面这 6 件事做对，根据 <strong>2018 年 European Association for the Study of Liver</strong> 研究，<strong>70% 的脂肪肝患者</strong>在 3～6 个月内会看到肝指数自然改善。
+                    </p>
+                    <p style="margin:0 0 12px; color:#444; font-size:0.93rem; line-height:1.85;">
+                        但我也知道 —— ${difficulty}
+                    </p>
+                    <p style="margin:0 0 10px; color:#222; font-size:0.95rem; line-height:1.85;">
+                        如果你想让这条路走得更轻松、更快 ——<br>
+                        可以搭配一份「先消炎、再补肝」的天然营养品当加速器。
+                    </p>
+                    <div style="background:#fff; border-left:3px solid ${accent}; border-radius:0 8px 8px 0; padding:10px 14px; margin:8px 0 10px;">
+                        <p style="margin:0 0 4px; color:#444; font-size:0.9rem; font-weight:700;">它不是替代生活改善，而是：</p>
+                        <p style="margin:0; color:#444; font-size:0.9rem; line-height:1.85;">${benefit}</p>
+                    </div>
+                    <p style="margin:0; color:${headerColor}; font-weight:700; font-size:0.95rem;">
+                        生活改善是主轴，营养品是加速器。
+                    </p>
+                </div>
+            `;
+        };
+        // ─────────────────────────────────────────────────────────────
+
+        // ── 段 6：Master Liv Pitch（顾问口吻 + 个性化 reasoning）─────
+        const buildMasterLivPitch = (riskColor) => {
+            const cfg = {
+                red: {
+                    sectionNum: 6,
+                    boxes: 7,
+                    months: '3.5',
+                    headerColor: '#154d45',
+                    bgGrad: 'linear-gradient(135deg,#f0faf8,#e8f5f1)',
+                    packageImg: 'images/package_7boxes.png',
+                    packageAlt: 'Master Liv VVIP 7 盒逆转配套',
+                    monthLabel: '个月疗程',
+                    boxColor: '#154d45',
+                    intro: `读到这里你大概会想 ——<br>"OK 那这个营养品是什么？要吃多久？怎么知道适合我？"<br>我一个一个跟你说。`,
+                    why_intro: `${userName}，这不是 standard package。是按你的 input 算出来的：`,
+                    stages: [
+                        ['第 1 个月', '消炎期 — 把发炎平息'],
+                        ['第 2 个月', '修复期 — 肝细胞开始再生'],
+                        ['第 3～3.5 月', '巩固期 — 防止反弹']
+                    ],
+                    warning: `少于 3 个月停下来 → 肝脏会回到原状，等于白做。<br>所以 7 盒 = 完整周期的最低份量。`,
+                    altNote: `如果你的状态比较轻，4 盒也可以。<br>但你目前的 input 显示需要完整周期。`
+                },
+                yellow: {
+                    sectionNum: 6,
+                    boxes: 4,
+                    months: '2',
+                    headerColor: '#154d45',
+                    bgGrad: 'linear-gradient(135deg,#f0faf8,#e8f5f1)',
+                    packageImg: 'images/package_4boxes.png',
+                    packageAlt: 'Master Liv 4 盒初步改善配套',
+                    monthLabel: '个月疗程',
+                    boxColor: '#154d45',
+                    intro: `读到这里你大概会想 ——<br>"OK 那这个营养品是什么？要吃多久？怎么知道适合我？"<br>我一个一个跟你说。`,
+                    why_intro: `${userName}，你目前还在初期阶段，4 盒 = 消炎 + 修复的基础周期。这是按你的 input 算的：`,
+                    stages: [
+                        ['第 1 个月', '消炎期 — 平息初期炎症'],
+                        ['第 2 个月', '修复期 — 肝细胞开始再生']
+                    ],
+                    warning: `趁现在介入，介入成本最低。<br>拖到红字阶段，就需要 7 盒（多 1 个月巩固期）。`,
+                    altNote: ''
+                },
+                green: {
+                    sectionNum: 5,
+                    boxes: 4,
+                    months: '2',
+                    headerColor: '#1e7e34',
+                    bgGrad: 'linear-gradient(135deg,#eafaf1,#d5f5e3)',
+                    packageImg: 'images/package_4boxes.png',
+                    packageAlt: 'Master Liv 4 盒日常保养配套',
+                    monthLabel: '个月保养',
+                    boxColor: '#27ae60',
+                    intro: `你目前状态好，但偶尔熬夜、应酬、压力大的日子，<br>给肝脏多一层防护，不让自己变差。`,
+                    why_intro: `${userName}，这是为「保养型」设计的入门份量：`,
+                    stages: [
+                        ['第 1 个月', '日常防护 — 应付熬夜 / 应酬 / 压力'],
+                        ['第 2 个月', '稳定肝功能 — 维持现在的好状态']
+                    ],
+                    warning: `保养不是 forever，是周期性 ——<br>建议每年做 1～2 个 2 个月周期，特别在工作压力高的季节。`,
+                    altNote: ''
+                }
+            };
+            const c = cfg[riskColor];
+
+            // 个性化「为什么是 X 盒」reasoning bullets
+            const ctxItems = [];
+            const sitMap = {
+                "体检发现肝指数/胆固醇偏高":  `你的现状：<strong>肝指数偏高</strong> → 已经在发炎，不能只做"治标"`,
+                "有脂肪肝/B型肝炎史":         `你的现状：<strong>有脂肪肝/B 肝史</strong> → 肝脏修复力下降，需要完整周期`,
+                "经常觉得累、容易生病":        `你的现状：<strong>长期疲倦 / 易生病</strong> → 肝脏排毒效率下降`,
+                "长期吃药担心引发肝炎":        `你的现状：<strong>长期服药</strong> → 肝脏代谢压力持续`
+            };
+            if (sitMap[currentSituation]) ctxItems.push(sitMap[currentSituation]);
+
+            const habits = [];
+            if (qValues.q1 <= 3) habits.push('熬夜');
+            if (qValues.q2 <= 3) habits.push('应酬饮酒');
+            if (qValues.q3 <= 3) habits.push('饮食高油');
+            if (qValues.q5 <= 3) habits.push('缺乏运动');
+            if (qValues.q7 <= 3) habits.push('高压焦虑');
+            if (habits.length > 0) ctxItems.push(`你的高风险习惯：<strong>${habits.slice(0, 3).join('、')}</strong> → 每天还在持续消耗肝脏`);
+
+            ctxItems.push(`你的目标：<strong>${outcome}</strong> → 需要给肝脏足够时间`);
+
+            const ctxItemsHtml = ctxItems.map(t => `<li style="margin-bottom:4px;">${t}</li>`).join('');
+            const stagesHtml = c.stages.map(([when, what]) => `<div style="display:flex; gap:10px; padding:4px 0;"><strong style="color:${c.headerColor}; min-width:80px;">${when}</strong><span style="color:#444;">${what}</span></div>`).join('');
+
+            return `
+                <div style="background:${c.bgGrad}; border:2px solid ${c.headerColor}; border-radius:14px; padding:22px; margin:24px 0;">
+                    <p style="margin:0 0 12px; color:${c.headerColor}; font-weight:800; font-size:1.05rem; letter-spacing:1px;">🌿 第 ${c.sectionNum} 段 · ${userName}，为什么我推荐 Master Liv？</p>
+                    <p style="margin:0 0 14px; color:#444; font-size:0.93rem; line-height:1.85;">
+                        读到段 ${c.sectionNum - 1} 你大概会问 ——<br>
+                        "OK 那这个营养品是什么？为什么是 Master Liv？要吃多久？"<br>
+                        我一个一个跟你说。
+                    </p>
+
+                    <!-- 品牌 reasoning：为什么不是其他护肝品 -->
+                    <div style="background:#fff; border-radius:10px; padding:16px 18px; margin-bottom:14px; border-left:4px solid ${c.headerColor};">
+                        <p style="margin:0 0 10px; color:${c.headerColor}; font-weight:800; font-size:0.98rem;">⭐ 为什么不是其他护肝品？</p>
+                        <p style="margin:0 0 10px; color:#333; font-size:0.92rem; line-height:1.85;">
+                            市面上「护肝」营养品有几十款，但 90% 都做错一件事 ——<br>
+                            <strong>直接补，没有先消炎</strong>。
+                        </p>
+                        <p style="margin:0 0 10px; color:#333; font-size:0.92rem; line-height:1.85;">
+                            Master Liv 是大马少数同时做到「<strong>先消炎 → 再补肝</strong>」<br>
+                            2 步骤的天然营养品：
+                        </p>
+                        <ul style="margin:0; padding-left:20px; color:#444; font-size:0.9rem; line-height:1.95;">
+                            <li>✅ <strong>KKM (大马卫生部) 注册</strong>，安全合法</li>
+                            <li>✅ <strong>100% 天然</strong> — 姜黄 + 奶蓟草</li>
+                            <li>✅ 累计 <strong>3 万+ 大马顾客</strong>使用</li>
+                        </ul>
+                    </div>
+
+                    <!-- Part 1 · 它是什么 (含成分介绍 merge) -->
+                    <div style="background:#fff; border-radius:10px; padding:16px 18px; margin-bottom:14px; border-left:4px solid ${c.headerColor};">
+                        <p style="margin:0 0 10px; color:${c.headerColor}; font-weight:800; font-size:0.98rem;">【1】它是什么？— 30 秒讲完</p>
+                        <div style="text-align:center; margin:10px 0 14px;">
+                            <img src="images/master_liv_box.png" alt="Master Liv 包装盒" style="max-width:240px; width:65%; border-radius:10px;" onerror="this.style.display='none'" />
+                        </div>
+                        <p style="margin:0 0 12px; color:#333; font-size:0.92rem; line-height:1.85;">
+                            Master Liv 不是单纯的"补品"，是一个 2 步骤天然营养品：
+                        </p>
+                        <div style="display:flex; flex-direction:column; gap:8px; margin-bottom:12px;">
+                            <div style="display:flex; align-items:center; gap:12px; background:#fffbf0; border-radius:8px; padding:10px 12px;">
+                                <img src="images/姜黄根 .jpg" alt="姜黄根" style="width:50px; height:50px; border-radius:50%; object-fit:cover; border:2px solid #f1c40f; flex-shrink:0;" onerror="this.style.display='none'">
+                                <div>
+                                    <p style="margin:0; font-weight:700; color:#d35400; font-size:0.92rem;">Step 1：姜黄根 (Curcumin) → 先消炎</p>
+                                    <p style="margin:0; color:#666; font-size:0.85rem;">扑灭长期积累的肝脏慢性炎症</p>
+                                </div>
+                            </div>
+                            <div style="display:flex; align-items:center; gap:12px; background:#f0faf8; border-radius:8px; padding:10px 12px;">
+                                <img src="images/奶蓟草 .jpg" alt="奶蓟草" style="width:50px; height:50px; border-radius:50%; object-fit:cover; border:2px solid #154d45; flex-shrink:0;" onerror="this.style.display='none'">
+                                <div>
+                                    <p style="margin:0; font-weight:700; color:#154d45; font-size:0.92rem;">Step 2：奶蓟草 (Silymarin) → 再修复</p>
+                                    <p style="margin:0; color:#666; font-size:0.85rem;">促进肝细胞再生，修护受损细胞</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="margin:0; color:#555; font-size:0.88rem; line-height:1.8; font-style:italic;">
+                            为什么"顺序"重要？发炎中的肝脏吸收不了一般补品 ——<br>
+                            就像森林着火，先施肥没用。要先把火灭了 → 才施肥，营养成分才进得去。
+                        </p>
+                    </div>
+
+                    <!-- Part 2 · 要喝多少盒才有效 (个性化 reasoning + 数学) -->
+                    <div style="background:#fff; border-radius:10px; padding:16px 18px; margin-bottom:14px; border-left:4px solid ${c.headerColor};">
+                        <p style="margin:0 0 10px; color:${c.headerColor}; font-weight:800; font-size:0.98rem;">【2】要喝多少盒才有效？</p>
+                        <p style="margin:0 0 8px; color:#333; font-size:0.92rem; line-height:1.85;">${c.why_intro}</p>
+                        <ul style="margin:0 0 14px; padding-left:20px; color:#444; font-size:0.9rem; line-height:1.8;">${ctxItemsHtml}</ul>
+                        <p style="margin:0 0 6px; color:#333; font-size:0.92rem; line-height:1.85; font-weight:700;">肝脏修复有生理周期，不能跳过：</p>
+                        <div style="background:${c.bgGrad}; border-radius:8px; padding:10px 14px; margin-bottom:14px;">${stagesHtml}</div>
+
+                        <!-- 一盒多少包 + 数学算给顾客看 -->
+                        <div style="background:#fffbf0; border:1.5px dashed ${c.headerColor}; border-radius:10px; padding:14px 16px; margin-bottom:12px;">
+                            <p style="margin:0 0 8px; color:${c.headerColor}; font-weight:800; font-size:0.95rem;">📦 一盒多少包？算给你看：</p>
+                            <ul style="margin:0 0 10px; padding-left:20px; color:#444; font-size:0.9rem; line-height:1.85;">
+                                <li>1 盒 Master Liv = <strong>15 包</strong>（每包 3g 冲泡）</li>
+                                <li>推荐剂量：<strong>每天 1 包</strong></li>
+                                <li>所以 1 盒 = <strong>15 天</strong>的份量</li>
+                            </ul>
+                            <p style="margin:0 0 4px; color:${c.headerColor}; font-weight:700; font-size:0.9rem;">🧮 数学：</p>
+                            <p style="margin:0 0 8px; color:#333; font-size:0.9rem; line-height:1.8; padding-left:8px;">
+                                ${c.months} 个月 = <strong>${Math.round(parseFloat(c.months) * 30)} 天</strong><br>
+                                ${Math.round(parseFloat(c.months) * 30)} ÷ 15 = <strong style="color:${c.headerColor}; font-size:1.05rem;">${c.boxes} 盒</strong>
+                            </p>
+                            <p style="margin:0; color:#666; font-size:0.85rem; line-height:1.75; font-style:italic;">所以「${c.boxes} 盒」不是销售凭感觉报的数字，是按你的状况 + 完整修复周期算出来的。</p>
+                        </div>
+
+                        <p style="margin:0 0 ${c.altNote ? '8px' : '0'}; color:#c0392b; font-size:0.9rem; line-height:1.8; font-weight:600;">${c.warning}</p>
+                        ${c.altNote ? `<p style="margin:0; color:#666; font-size:0.85rem; line-height:1.75; font-style:italic;">${c.altNote}</p>` : ''}
+                    </div>
+
+                    <!-- 配套图 -->
+                    <div class="treatment-badge" style="margin:14px 0;${riskColor !== 'red' ? ` background:${c.bgGrad}; border-color:${c.headerColor};` : ''}">
+                        <div style="text-align:center;">
+                            <div class="box-count"${riskColor !== 'red' ? ` style="color:${c.boxColor};"` : ''}>${c.boxes}</div>
+                            <div class="box-label">📦 盒子</div>
+                        </div>
+                        <div class="divider"${riskColor === 'green' ? ' style="background:#a9dfbf;"' : (riskColor === 'yellow' ? ' style="background:#f0c08a;"' : '')}></div>
+                        <div style="text-align:center;">
+                            <div class="month-count"${riskColor !== 'red' ? ` style="color:${c.boxColor};"` : ''}>${c.months}</div>
+                            <div class="month-label">🗓️ ${c.monthLabel}</div>
+                        </div>
+                    </div>
+                    <div class="product-img-wrap">
+                        <img src="${c.packageImg}" alt="${c.packageAlt}" style="max-width:100%; border-radius:12px;" />
+                    </div>
+
+                    <!-- Part 3 · 时间轴反馈 -->
+                    <div style="background:#fff; border-radius:10px; padding:16px 18px; margin-top:14px; border-left:4px solid ${c.headerColor};">
+                        <p style="margin:0 0 10px; color:${c.headerColor}; font-weight:800; font-size:0.98rem;">【3】怎么知道有没有效？— 按时间轴的真实反馈</p>
+                        <div style="display:flex; flex-direction:column; gap:10px;">
+                            <div style="background:#fafafa; border-radius:8px; padding:10px 12px;">
+                                <p style="margin:0 0 4px; color:${c.headerColor}; font-weight:700; font-size:0.9rem;">🗓️ 第 1～2 周</p>
+                                <p style="margin:0; color:#444; font-size:0.87rem; line-height:1.75;">· 早上起床没那么"重"，眼睛比较亮<br>· 大便比较顺</p>
+                            </div>
+                            <div style="background:#fafafa; border-radius:8px; padding:10px 12px;">
+                                <p style="margin:0 0 4px; color:${c.headerColor}; font-weight:700; font-size:0.9rem;">🗓️ 第 1 个月</p>
+                                <p style="margin:0; color:#444; font-size:0.87rem; line-height:1.75;">· 下午 3-4 点的疲惫感开始减少<br>· 喝酒后第二天恢复比较快</p>
+                            </div>
+                            ${riskColor === 'red' ? `
+                            <div style="background:#fafafa; border-radius:8px; padding:10px 12px;">
+                                <p style="margin:0 0 4px; color:${c.headerColor}; font-weight:700; font-size:0.9rem;">🗓️ 第 2～3 个月</p>
+                                <p style="margin:0; color:#444; font-size:0.87rem; line-height:1.75;">· 体检 ALT / AST / GGT 数字下降趋势（建议月底复检对照）<br>· 腰围 / 体重微幅下降</p>
+                            </div>
+                            ` : ''}
+                            ${riskColor === 'yellow' ? `
+                            <div style="background:#fafafa; border-radius:8px; padding:10px 12px;">
+                                <p style="margin:0 0 4px; color:${c.headerColor}; font-weight:700; font-size:0.9rem;">🗓️ 第 2 个月</p>
+                                <p style="margin:0; color:#444; font-size:0.87rem; line-height:1.75;">· 体检 ALT / AST 数字稳定 / 略微下降<br>· 整个人状态轻盈一点</p>
+                            </div>
+                            ` : ''}
+                            ${riskColor === 'green' ? `
+                            <div style="background:#fafafa; border-radius:8px; padding:10px 12px;">
+                                <p style="margin:0 0 4px; color:${c.headerColor}; font-weight:700; font-size:0.9rem;">🗓️ 第 2 个月</p>
+                                <p style="margin:0; color:#444; font-size:0.87rem; line-height:1.75;">· 熬夜后恢复速度比较快<br>· 维持现在的好状态，肝指数稳定</p>
+                            </div>
+                            ` : ''}
+                        </div>
+                    </div>
+
+                    <a href="${waLink}" target="_blank" class="btn btn-whatsapp" style="margin-top:18px;">📲 安排 1 对 1 健康顾问咨询</a>
+                    <p class="wa-subtext">✅ 免费咨询 &nbsp;·&nbsp; 无需付款 &nbsp;·&nbsp; 通常 5 分钟内回复</p>
+                </div>
+            `;
+        };
+        // ─────────────────────────────────────────────────────────────
+
         setTimeout(() => {
             document.getElementById('loading').style.display = 'none';
             document.getElementById('view-result').classList.add('active-view');
@@ -585,321 +1093,220 @@
                 resultContainer.className = "result-box red-risk";
                 htmlContent = `
                     ${personalizedSummary}
-                    <h2 style="color: #c0392b; margin-top:0; font-size:1.4rem;">⚠️ 警告：您的肝脏正在"超速老化"</h2>
-                    <div style="text-align:center; margin:16px 0 20px;">
-                        <img src="images/%E7%BA%A2%E8%89%B2%20%28%E9%AB%98%E9%A3%8E%E9%99%A9%3A%E5%8F%91%E7%82%8E%E6%9C%9F%29.png" alt="高风险发炎期肝脏" style="max-width:260px; width:75%; border-radius:16px; box-shadow:0 8px 28px rgba(192,57,43,0.35);" onerror="this.style.display='none'" />
-                        <div style="display:inline-block; margin-top:10px; background:#fff3f3; border:2px solid #e74c3c; border-radius:20px; padding:6px 18px;">
-                            <span style="color:#c0392b; font-weight:700; font-size:0.95rem;">🔴 高风险 / 发炎期</span>
-                        </div>
-                    </div>
-                    <p style="color:#555; line-height:1.8;">根据您的评估答案，您的肝脏正承受<strong>严重的发炎负担</strong>。如果不马上介入，脂肪肝只会越来越深。</p>
 
-                    <!-- 为什么发炎 -->
-                    <div style="background:#fff3f3; border-left:4px solid #e74c3c; border-radius:0 10px 10px 0; padding:18px 20px; margin:20px 0;">
-                        <p style="margin:0 0 10px; font-weight:700; color:#c0392b; font-size:1rem;">🔬 为什么肝脏会提前老化？</p>
-                        <p style="margin:0; color:#555; line-height:1.9; font-size:0.95rem;">
-                            当肝脏长期处于<strong>发炎状态</strong>，它的自我修复能力会越来越弱。<br>
-                            就像一个每天加班、从来没有休息的员工，迟早会"罢工"。<br><br>
-                            你感觉到的——疲惫、肚子圆、胆固醇高、睡不好……<br>
-                            不是年纪大了，而是<strong>肝脏在发炎，撑不住了</strong>。
+                    <!-- 段 1：肝龄分析（reframe） -->
+                    <div style="background:#fff; border:2px solid #c0392b; border-radius:14px; padding:20px; margin-bottom:22px;">
+                        <p style="margin:0 0 8px; color:#c0392b; font-weight:800; font-size:1rem; letter-spacing:1px;">📊 第 1 段 · 你的肝龄分析</p>
+                        <p style="margin:0 0 12px; color:#222; line-height:1.85; font-size:0.97rem;">
+                            ${userName}，你的实际年龄是 <strong>${document.getElementById('userAge').value} 岁</strong>，<br>
+                            但根据你的回答，你的肝脏目前的运作状态相当于 <strong style="color:#c0392b; font-size:1.1rem;">${liverAge} 岁</strong> 的水平 —— 比实际老了 <strong>${liverAge - userAgeNum}</strong> 岁。
+                        </p>
+                        <div style="text-align:center; margin:14px 0 8px;">
+                            <img src="images/%E7%BA%A2%E8%89%B2%20%28%E9%AB%98%E9%A3%8E%E9%99%A9%3A%E5%8F%91%E7%82%8E%E6%9C%9F%29.png" alt="高风险发炎期肝脏" style="max-width:220px; width:70%; border-radius:14px; box-shadow:0 6px 22px rgba(192,57,43,0.30);" onerror="this.style.display='none'" />
+                            <div style="display:inline-block; margin-top:8px; background:#fff3f3; border:2px solid #e74c3c; border-radius:20px; padding:5px 16px;">
+                                <span style="color:#c0392b; font-weight:700; font-size:0.9rem;">🔴 高风险 · 肝脏处于发炎期</span>
+                            </div>
+                        </div>
+                        <p style="margin:10px 0 0; color:#666; font-size:0.88rem; line-height:1.7; font-style:italic; text-align:center;">＊ 肝龄不是医学诊断，是基于生活习惯与症状的健康评估指标，仅供你参考自己的状态</p>
+                    </div>
+
+                    <!-- 段 2：原因 — 肝发炎 -->
+                    <div style="background:#fff; border:1px solid #e8e8e8; border-radius:14px; padding:22px; margin-bottom:22px; border-top:4px solid #c0392b;">
+                        <p style="margin:0 0 10px; color:#c0392b; font-weight:800; font-size:1rem; letter-spacing:1px;">🔬 第 2 段 · 为什么你的肝脏「老」得这么快？</p>
+                        <p style="margin:0 0 14px; color:#222; font-weight:700; font-size:1rem; line-height:1.7;">
+                            根本原因只有一个 —— <span style="color:#c0392b;">你的肝脏正在「慢性发炎」</span>。
+                        </p>
+                        <p style="margin:0 0 12px; color:#444; line-height:1.85; font-size:0.93rem;">
+                            肝脏没有痛觉神经。<br>
+                            它发炎的时候，不会像胃痛、头痛那样「叫」给你听。<br><br>
+                            它只会用「累」、「肚子胀」、「睡不好」、「精神差」<br>
+                            这些很容易被忽略的方式提醒你。
+                        </p>
+                        <div style="background:#fafafa; border-radius:10px; padding:14px 16px; margin-top:12px;">
+                            <p style="margin:0 0 8px; color:#444; font-size:0.9rem; font-weight:700;">📍 你的回答中，以下几项正在持续刺激肝脏发炎：</p>
+                            <p style="margin:0; color:#555; line-height:2; font-size:0.9rem;">
+                                ${riskSignals.length > 0 ? riskSignals.slice(0, 5).map(s => `• ${s}`).join('<br>') : '• 整体生活习惯已开始累积负担'}
+                            </p>
+                        </div>
+                        <p style="margin:14px 0 0; color:#666; font-size:0.88rem; line-height:1.75; font-style:italic;">
+                            这些不是单一问题，而是叠加效应 —— 越多项目重叠，肝脏发炎程度越严重。
                         </p>
                     </div>
 
-                    <!-- 先消炎再补肝 -->
-                    <div style="background:#f0faf8; border:2px solid #154d45; border-radius:12px; padding:20px; margin:20px 0;">
-                        <p style="margin:0 0 14px; font-weight:700; color:#154d45; font-size:1.05rem;">💡 逆转的正确逻辑</p>
-                        <p style="margin:0 0 12px; color:#666; font-size:0.95rem; line-height:1.8;">
-                            ❌ 很多人发现肝不好，第一反应就是"进补"<br>
-                            → 但发炎的肝脏根本吸收不了，反而增加代谢负担，越补越糟
+                    <!-- 段 3：不治疗后果（医学进程，中度） -->
+                    <div style="background:#fff8f3; border:1px solid #f0c4a4; border-radius:14px; padding:22px; margin-bottom:22px; border-top:4px solid #e67e22;">
+                        <p style="margin:0 0 10px; color:#d35400; font-weight:800; font-size:1rem; letter-spacing:1px;">⏳ 第 3 段 · 如果继续放着不管，会怎样？</p>
+                        <p style="margin:0 0 14px; color:#222; font-size:0.95rem; line-height:1.85;">
+                            肝脏发炎一旦开始，就是一条<strong>单向恶化路径</strong>。<br>
+                            它不会自己停下来，只会一阶一阶往下走：
                         </p>
-                        <p style="margin:0; color:#333; font-weight:600; line-height:2; font-size:0.95rem;">
-                            ✅ 正确的做法只有两步：<br>
-                            <span style="color:#154d45;">第一步：先消炎</span> — 用姜黄根扑灭肝脏的慢性炎症<br>
-                            <span style="color:#154d45;">第二步：再补肝</span> — 用奶蓟草深层修护受损的肝细胞<br><br>
-                            这个完整的代谢周期，最少需要坚持 <strong>90 天</strong> 才能完成。
-                        </p>
-                    </div>
-
-                    <hr style="border: 0; border-top: 1px dashed #fadbd8; margin: 24px 0;">
-                    <h3 style="color: var(--primary-teal); margin-bottom: 5px;">🔥 您的专属逆转疗程方案</h3>
-                    <p style="color: #666; margin-top: 0; font-size: 0.95rem;">每天1包，完成完整肝细胞代谢周期，全面逆转脂肪肝。</p>
-                    <div class="treatment-badge">
-                        <div style="text-align:center;">
-                            <div class="box-count">7</div>
-                            <div class="box-label">📦 盒子</div>
-                        </div>
-                        <div class="divider"></div>
-                        <div style="text-align:center;">
-                            <div class="month-count">3.5</div>
-                            <div class="month-label">🗓️ 个月疗程</div>
-                        </div>
-                    </div>
-                    <div class="product-img-wrap">
-                        <img src="images/package_7boxes.png" alt="Master Liv VVIP 7盒逆转配套" style="max-width:100%; border-radius:12px;" />
-                    </div>
-                    <div class="outcome-box">
-                        <h4>✅ 完成 3.5 个月疗程后，您将看到以下改变：</h4>
-                        <ul>
-                            <li>🔬 肝指数(ALT/AST)明显下降，趋向正常范围</li>
-                            <li>⚡ 体力精神大幅提升，睡够真的不累了</li>
-                            <li>🍽️ 消化顺畅，胃胀气、食欲不振问题改善</li>
-                            <li>🏃 腰围变小，内脏脂肪逐步减少</li>
-                            <li>😌 情绪稳定，肝火旺、容易暴躁的情况减少</li>
-                            <li>💊 长期服药的肝脏负担得到有效保护</li>
-                        </ul>
-                    </div>
-                    <a href="${waLink}" target="_blank" class="btn btn-whatsapp">📲 Whatsapp PM 最新优惠</a>
-                    <p class="wa-subtext">✅ 免费咨询 &nbsp;·&nbsp; 无需付款 &nbsp;·&nbsp; 通常 5 分钟内回复</p>
-
-                    <!-- 成分介绍 -->
-                    <div style="margin-top:28px; padding-top:24px; border-top:2px dashed #e0e0e0;">
-                        <h3 style="color:#154d45; text-align:center; margin-bottom:6px; font-size:1.15rem;">🌿 为什么 Master Liv 能做到"先消炎，再补肝"？</h3>
-                        <p style="text-align:center; color:#888; font-size:0.88rem; margin-top:0; margin-bottom:20px;">两大核心成分，精准分工，协同修复</p>
-                        <div style="background:#fffbf0; border:2px solid #f1c40f; border-radius:14px; padding:18px 20px; margin-bottom:14px;">
-                            <div class="ingredient-card-inner">
-                                <img src="images/姜黄根 .jpg" alt="姜黄根 Turmeric Root" style="border:2px solid #f1c40f;">
-                                <div class="ingredient-text">
-                                    <p style="margin:0 0 6px; font-weight:700; color:#d35400; font-size:0.98rem;">第一步：姜黄根（Turmeric Root）— 消炎</p>
-                                    <p style="margin:0; color:#666; font-size:0.88rem; line-height:1.85;">
-                                        姜黄根含有高浓度<strong>姜黄素（Curcumin）</strong>，是天然最强效的消炎成分之一。<br>
-                                        能深入肝脏细胞，<strong>扑灭长期积累的慢性炎症</strong>，让发炎的肝脏先"平静下来"，才能真正开始修复。
-                                    </p>
+                        <div style="background:#fff; border-radius:10px; padding:16px; margin-bottom:12px;">
+                            <div style="display:flex; flex-direction:column; gap:10px;">
+                                <div style="display:flex; align-items:center; gap:10px;">
+                                    <div style="width:26px; height:26px; border-radius:50%; background:#f1c40f; color:#7a5e00; font-weight:800; display:flex; align-items:center; justify-content:center; font-size:0.8rem; flex-shrink:0;">1</div>
+                                    <div style="font-size:0.92rem;"><strong>肝脏慢性发炎</strong> <span style="color:#888;">← 你目前在这里</span></div>
+                                </div>
+                                <div style="text-align:center; color:#bbb; font-size:0.85rem;">↓ 1～3 年</div>
+                                <div style="display:flex; align-items:center; gap:10px;">
+                                    <div style="width:26px; height:26px; border-radius:50%; background:#e67e22; color:white; font-weight:800; display:flex; align-items:center; justify-content:center; font-size:0.8rem; flex-shrink:0;">2</div>
+                                    <div style="font-size:0.92rem;"><strong>脂肪肝加深</strong> <span style="color:#888;">（体检报告会出现红字）</span></div>
+                                </div>
+                                <div style="text-align:center; color:#bbb; font-size:0.85rem;">↓ 3～7 年</div>
+                                <div style="display:flex; align-items:center; gap:10px;">
+                                    <div style="width:26px; height:26px; border-radius:50%; background:#d35400; color:white; font-weight:800; display:flex; align-items:center; justify-content:center; font-size:0.8rem; flex-shrink:0;">3</div>
+                                    <div style="font-size:0.92rem;"><strong>肝纤维化</strong> <span style="color:#888;">（修复能力开始永久下降）</span></div>
+                                </div>
+                                <div style="text-align:center; color:#bbb; font-size:0.85rem;">↓ 5～15 年</div>
+                                <div style="display:flex; align-items:center; gap:10px;">
+                                    <div style="width:26px; height:26px; border-radius:50%; background:#922b21; color:white; font-weight:800; display:flex; align-items:center; justify-content:center; font-size:0.8rem; flex-shrink:0;">4</div>
+                                    <div style="font-size:0.92rem;"><strong>肝硬化 / 肝功能衰竭</strong> <span style="color:#888;">（不可逆，只能等换肝）</span></div>
                                 </div>
                             </div>
                         </div>
-                        <div style="background:#f0faf8; border:2px solid #154d45; border-radius:14px; padding:18px 20px; margin-bottom:14px;">
-                            <div class="ingredient-card-inner">
-                                <img src="images/奶蓟草 .jpg" alt="奶蓟草 Milk Thistle" style="border:2px solid #154d45;">
-                                <div class="ingredient-text">
-                                    <p style="margin:0 0 6px; font-weight:700; color:#154d45; font-size:0.98rem;">第二步：奶蓟草（Milk Thistle）— 补肝</p>
-                                    <p style="margin:0; color:#666; font-size:0.88rem; line-height:1.85;">
-                                        奶蓟草含有<strong>水飞蓟素（Silymarin）</strong>，是全球医学界公认的护肝成分。<br>
-                                        能<strong>促进肝细胞再生</strong>，修护已受损的细胞，同时形成保护膜，防止毒素再次侵入。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="background:linear-gradient(135deg,#154d45,#0b3a34); color:white; border-radius:12px; padding:16px 18px; text-align:center;">
-                            <p style="margin:0 0 6px; font-weight:700; font-size:0.98rem;">⚡ 两者协同的完整逻辑</p>
-                            <p style="margin:0; font-size:0.88rem; opacity:0.9; line-height:1.85;">先消炎 → 肝脏环境干净了 → 补肝成分才真正被吸收<br>这才是逆转脂肪肝不走弯路的方法</p>
-                        </div>
-                        <a href="${waLink}" target="_blank" class="btn btn-whatsapp" style="margin-top:20px;">
-                            📲 Whatsapp PM 最新优惠
-                        </a>
-                        <p class="wa-subtext">✅ 免费咨询 &nbsp;·&nbsp; 无需付款 &nbsp;·&nbsp; 通常 5 分钟内回复</p>
+                        <p style="margin:12px 0 0; color:#444; font-size:0.92rem; line-height:1.85; padding:12px 14px; background:#fff; border-left:3px solid #e67e22; border-radius:0 8px 8px 0;">
+                            <strong>关键提醒：</strong>第 1～2 阶段是<strong>完全可以逆转</strong>的。<br>
+                            一旦进入第 3 阶段（肝纤维化），就只能「延缓」不能「逆转」了。<br>
+                            你目前还在第 1 阶段 —— 这是最佳的介入窗口。
+                        </p>
                     </div>
+
+                    <!-- 段 4：30 天自然护肝改善计划（6 大方向）-->
+                    ${buildLifestylePlan('red')}
+
+                    <!-- 段 5：过渡桥（短 + customize）-->
+                    ${buildTransitionBridge('red')}
+
+                    <!-- 段 6：Master Liv pitch (合并 = it's what + why X 盒 + 时间轴) -->
+                    ${buildMasterLivPitch('red')}
                 `;
             } else if (totalScore <= 80) {
                 resultContainer.className = "result-box yellow-risk";
                 htmlContent = `
                     ${personalizedSummary}
-                    <h2 style="color: #d35400; margin-top:0; font-size:1.4rem;">🟡 提醒：您的肝脏比实际年龄老了约 5～8 岁</h2>
-                    <div style="text-align:center; margin:16px 0 20px;">
-                        <img src="images/%E9%BB%84%E8%89%B2%20%28%E4%B8%AD%E9%A3%8E%E9%99%A9%3A%E4%BA%9A%E5%81%A5%E5%BA%B7%29.png" alt="中风险亚健康肝脏" style="max-width:260px; width:75%; border-radius:16px; box-shadow:0 8px 28px rgba(211,84,0,0.30);" onerror="this.style.display='none'" />
-                        <div style="display:inline-block; margin-top:10px; background:#fffbf0; border:2px solid #e67e22; border-radius:20px; padding:6px 18px;">
-                            <span style="color:#d35400; font-weight:700; font-size:0.95rem;">🟡 中风险 / 亚健康</span>
+
+                    <!-- 段 1：肝龄分析 -->
+                    <div style="background:#fff; border:2px solid #e67e22; border-radius:14px; padding:20px; margin-bottom:22px;">
+                        <p style="margin:0 0 8px; color:#d35400; font-weight:800; font-size:1rem; letter-spacing:1px;">📊 第 1 段 · 你的肝龄分析</p>
+                        <p style="margin:0 0 12px; color:#222; line-height:1.85; font-size:0.97rem;">
+                            ${userName}，你的实际年龄是 <strong>${document.getElementById('userAge').value} 岁</strong>，<br>
+                            根据你的回答，你的肝脏目前的运作状态相当于 <strong style="color:#d35400; font-size:1.1rem;">${liverAge} 岁</strong> —— 比实际老了 <strong>${liverAge - userAgeNum}</strong> 岁。
+                        </p>
+                        <div style="text-align:center; margin:14px 0 8px;">
+                            <img src="images/%E9%BB%84%E8%89%B2%20%28%E4%B8%AD%E9%A3%8E%E9%99%A9%3A%E4%BA%9A%E5%81%A5%E5%BA%B7%29.png" alt="中风险亚健康肝脏" style="max-width:220px; width:70%; border-radius:14px; box-shadow:0 6px 22px rgba(211,84,0,0.30);" onerror="this.style.display='none'" />
+                            <div style="display:inline-block; margin-top:8px; background:#fffbf0; border:2px solid #e67e22; border-radius:20px; padding:5px 16px;">
+                                <span style="color:#d35400; font-weight:700; font-size:0.9rem;">🟡 中风险 · 亚健康预警期</span>
+                            </div>
+                        </div>
+                        <p style="margin:10px 0 0; color:#666; font-size:0.88rem; line-height:1.7; font-style:italic; text-align:center;">＊ 肝龄不是医学诊断，是基于生活习惯与症状的健康评估指标，仅供你参考</p>
+                    </div>
+
+                    <!-- 段 2：原因 — 肝发炎初期 -->
+                    <div style="background:#fff; border:1px solid #e8e8e8; border-radius:14px; padding:22px; margin-bottom:22px; border-top:4px solid #e67e22;">
+                        <p style="margin:0 0 10px; color:#d35400; font-weight:800; font-size:1rem; letter-spacing:1px;">🔬 第 2 段 · 为什么肝脏开始「老」了？</p>
+                        <p style="margin:0 0 14px; color:#222; font-weight:700; font-size:1rem; line-height:1.7;">
+                            原因是 —— <span style="color:#d35400;">你的肝脏正在「初期慢性发炎」</span>。
+                        </p>
+                        <p style="margin:0 0 12px; color:#444; line-height:1.85; font-size:0.93rem;">
+                            还没到体检报告红字的程度，<br>
+                            但每天的排毒、代谢、修复能力已经在悄悄下降。<br><br>
+                            那种「睡够了还是累」、「饭后肚子胀」、「精神老是不到位」的感觉<br>
+                            —— 不是年纪的问题，是<strong>肝脏在发炎，在跟你打信号</strong>。
+                        </p>
+                        <div style="background:#fafafa; border-radius:10px; padding:14px 16px; margin-top:12px;">
+                            <p style="margin:0 0 8px; color:#444; font-size:0.9rem; font-weight:700;">📍 你的回答中，以下几项正在持续刺激肝脏发炎：</p>
+                            <p style="margin:0; color:#555; line-height:2; font-size:0.9rem;">
+                                ${riskSignals.length > 0 ? riskSignals.slice(0, 5).map(s => `• ${s}`).join('<br>') : '• 整体生活习惯已开始累积负担'}
+                            </p>
                         </div>
                     </div>
-                    <p style="color:#555; line-height:1.8;">还不算严重，但肝脏已经在偷偷发出求救信号了。很多人就是在这个阶段"放任不管"，几年后才发现变成脂肪肝。</p>
 
-                    <!-- 为什么发炎 -->
-                    <div style="background:#fffbf0; border-left:4px solid #e67e22; border-radius:0 10px 10px 0; padding:18px 20px; margin:20px 0;">
-                        <p style="margin:0 0 10px; font-weight:700; color:#d35400; font-size:1rem;">🔬 这是怎么回事？</p>
-                        <p style="margin:0; color:#555; line-height:1.9; font-size:0.95rem;">
-                            您的肝脏正处于<strong>初期慢性发炎</strong>阶段。<br>
-                            还没到体检报告红灯的程度，但每天的排毒和代谢能力已经在悄悄下降。<br><br>
-                            那种"明明睡够了还是累"、"饭后肚子胀"的感觉——<br>
-                            不是体质问题，是<strong>肝脏在发炎，告诉你它需要帮助</strong>。
+                    <!-- 段 3：拖延后果（中度） -->
+                    <div style="background:#fffbf0; border:1px solid #f0c4a4; border-radius:14px; padding:22px; margin-bottom:22px; border-top:4px solid #e67e22;">
+                        <p style="margin:0 0 10px; color:#d35400; font-weight:800; font-size:1rem; letter-spacing:1px;">⏳ 第 3 段 · 如果继续放着不管，会怎样？</p>
+                        <p style="margin:0 0 14px; color:#222; font-size:0.95rem; line-height:1.85;">
+                            肝脏发炎一旦形成，就是一条<strong>单向恶化路径</strong>：
                         </p>
-                    </div>
-
-                    <!-- 先消炎再补肝 -->
-                    <div style="background:#f0faf8; border:2px solid #154d45; border-radius:12px; padding:20px; margin:20px 0;">
-                        <p style="margin:0 0 14px; font-weight:700; color:#154d45; font-size:1.05rem;">💡 现在是最好的干预时机</p>
-                        <p style="margin:0 0 12px; color:#666; font-size:0.95rem; line-height:1.8;">
-                            ❌ 很多人还在等"等严重了再说"<br>
-                            → 但炎症拖得越久，肝细胞损伤就越深，修复起来代价越大
-                        </p>
-                        <p style="margin:0; color:#333; font-weight:600; line-height:2; font-size:0.95rem;">
-                            ✅ 趁现在及时介入：<br>
-                            <span style="color:#154d45;">第一步：先消炎</span> — 把初期的炎症压下去，给肝脏喘息空间<br>
-                            <span style="color:#154d45;">第二步：再补肝</span> — 趁细胞还没严重受损，加速修复再生<br><br>
-                            越早开始，代价越小，效果越明显。
-                        </p>
-                    </div>
-
-                    <hr style="border: 0; border-top: 1px dashed #f9e79f; margin: 24px 0;">
-                    <h3 style="color: var(--primary-teal); margin-bottom: 5px;">💡 您的初步改善疗程方案</h3>
-                    <p style="color: #666; margin-top: 0; font-size: 0.95rem;">每天1包，先消炎后补肝，感受体力明显改变。</p>
-                    <div class="treatment-badge" style="background: linear-gradient(135deg, #fef9e7, #fdebd0); border-color: #e67e22;">
-                        <div style="text-align:center;">
-                            <div class="box-count">4</div>
-                            <div class="box-label">📦 盒子</div>
-                        </div>
-                        <div class="divider" style="background:#f0c08a;"></div>
-                        <div style="text-align:center;">
-                            <div class="month-count">2</div>
-                            <div class="month-label">🗓️ 个月疗程</div>
-                        </div>
-                    </div>
-                    <div class="product-img-wrap">
-                        <img src="images/package_4boxes.png" alt="Master Liv 4盒体验配套" style="max-width:100%; border-radius:12px;" />
-                    </div>
-                    <div class="outcome-box yellow-outcome">
-                        <h4>✅ 完成 2 个月疗程后，您将感受到：</h4>
-                        <ul>
-                            <li>⚡ 疲惫感明显减少，精神状态好转</li>
-                            <li>🍽️ 消化顺畅，胃胀气减少，食欲改善</li>
-                            <li>😌 情绪趋于稳定，压力感减轻</li>
-                            <li>🌙 睡眠质量提升，睡醒神清气爽</li>
-                            <li>🔄 肝脏排毒能力逐步恢复，身体变轻盈</li>
-                        </ul>
-                    </div>
-                    <a href="${waLink}" target="_blank" class="btn btn-whatsapp">📲 Whatsapp PM 最新优惠</a>
-                    <p class="wa-subtext">✅ 免费咨询 &nbsp;·&nbsp; 无需付款 &nbsp;·&nbsp; 通常 5 分钟内回复</p>
-
-                    <!-- 成分介绍 -->
-                    <div style="margin-top:28px; padding-top:24px; border-top:2px dashed #e0e0e0;">
-                        <h3 style="color:#154d45; text-align:center; margin-bottom:6px; font-size:1.15rem;">🌿 为什么 Master Liv 能做到"先消炎，再补肝"？</h3>
-                        <p style="text-align:center; color:#888; font-size:0.88rem; margin-top:0; margin-bottom:20px;">两大核心成分，精准分工，协同修复</p>
-                        <div style="background:#fffbf0; border:2px solid #f1c40f; border-radius:14px; padding:18px 20px; margin-bottom:14px;">
-                            <div class="ingredient-card-inner">
-                                <img src="images/姜黄根 .jpg" alt="姜黄根 Turmeric Root" style="border:2px solid #f1c40f;">
-                                <div class="ingredient-text">
-                                    <p style="margin:0 0 6px; font-weight:700; color:#d35400; font-size:0.98rem;">第一步：姜黄根（Turmeric Root）— 消炎</p>
-                                    <p style="margin:0; color:#666; font-size:0.88rem; line-height:1.85;">
-                                        姜黄根含有高浓度<strong>姜黄素（Curcumin）</strong>，是天然最强效的消炎成分之一。<br>
-                                        能深入肝脏细胞，<strong>扑灭长期积累的慢性炎症</strong>，让发炎的肝脏先"平静下来"，才能真正开始修复。
-                                    </p>
+                        <div style="background:#fff; border-radius:10px; padding:16px; margin-bottom:12px;">
+                            <div style="display:flex; flex-direction:column; gap:10px;">
+                                <div style="display:flex; align-items:center; gap:10px;">
+                                    <div style="width:26px; height:26px; border-radius:50%; background:#f1c40f; color:#7a5e00; font-weight:800; display:flex; align-items:center; justify-content:center; font-size:0.8rem; flex-shrink:0;">1</div>
+                                    <div style="font-size:0.92rem;"><strong>初期慢性发炎</strong> <span style="color:#888;">← 你目前在这里</span></div>
+                                </div>
+                                <div style="text-align:center; color:#bbb; font-size:0.85rem;">↓ 1～3 年</div>
+                                <div style="display:flex; align-items:center; gap:10px;">
+                                    <div style="width:26px; height:26px; border-radius:50%; background:#e67e22; color:white; font-weight:800; display:flex; align-items:center; justify-content:center; font-size:0.8rem; flex-shrink:0;">2</div>
+                                    <div style="font-size:0.92rem;"><strong>脂肪肝形成</strong> <span style="color:#888;">（体检红字开始出现）</span></div>
+                                </div>
+                                <div style="text-align:center; color:#bbb; font-size:0.85rem;">↓ 3～7 年</div>
+                                <div style="display:flex; align-items:center; gap:10px;">
+                                    <div style="width:26px; height:26px; border-radius:50%; background:#d35400; color:white; font-weight:800; display:flex; align-items:center; justify-content:center; font-size:0.8rem; flex-shrink:0;">3</div>
+                                    <div style="font-size:0.92rem;"><strong>肝纤维化</strong> <span style="color:#888;">（开始不可逆）</span></div>
                                 </div>
                             </div>
                         </div>
-                        <div style="background:#f0faf8; border:2px solid #154d45; border-radius:14px; padding:18px 20px; margin-bottom:14px;">
-                            <div class="ingredient-card-inner">
-                                <img src="images/奶蓟草 .jpg" alt="奶蓟草 Milk Thistle" style="border:2px solid #154d45;">
-                                <div class="ingredient-text">
-                                    <p style="margin:0 0 6px; font-weight:700; color:#154d45; font-size:0.98rem;">第二步：奶蓟草（Milk Thistle）— 补肝</p>
-                                    <p style="margin:0; color:#666; font-size:0.88rem; line-height:1.85;">
-                                        奶蓟草含有<strong>水飞蓟素（Silymarin）</strong>，是全球医学界公认的护肝成分。<br>
-                                        能<strong>促进肝细胞再生</strong>，修护已受损的细胞，同时形成保护膜，防止毒素再次侵入。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="background:linear-gradient(135deg,#154d45,#0b3a34); color:white; border-radius:12px; padding:16px 18px; text-align:center;">
-                            <p style="margin:0 0 6px; font-weight:700; font-size:0.98rem;">⚡ 两者协同的完整逻辑</p>
-                            <p style="margin:0; font-size:0.88rem; opacity:0.9; line-height:1.85;">先消炎 → 肝脏环境干净了 → 补肝成分才真正被吸收<br>这才是逆转脂肪肝不走弯路的方法</p>
-                        </div>
-                        <a href="${waLink}" target="_blank" class="btn btn-whatsapp" style="margin-top:20px;">
-                            📲 Whatsapp PM 最新优惠
-                        </a>
-                        <p class="wa-subtext">✅ 免费咨询 &nbsp;·&nbsp; 无需付款 &nbsp;·&nbsp; 通常 5 分钟内回复</p>
+                        <p style="margin:12px 0 0; color:#444; font-size:0.92rem; line-height:1.85; padding:12px 14px; background:#fff; border-left:3px solid #e67e22; border-radius:0 8px 8px 0;">
+                            <strong>关键提醒：</strong>你目前还在第 1 阶段，是「<strong>修复成本最低</strong>」的窗口。<br>
+                            拖到第 2 阶段，要花 3 倍时间。拖到第 3 阶段，就只能「延缓」不能「逆转」。
+                        </p>
                     </div>
+
+                    <!-- 段 4：30 天自然护肝改善计划（6 大方向）-->
+                    ${buildLifestylePlan('yellow')}
+
+                    <!-- 段 5：过渡桥（短 + customize）-->
+                    ${buildTransitionBridge('yellow')}
+
+                    <!-- 段 6：Master Liv pitch (合并 = it's what + why X 盒 + 时间轴) -->
+                    ${buildMasterLivPitch('yellow')}
                 `;
             } else {
                 resultContainer.className = "result-box green-risk";
                 htmlContent = `
                     ${personalizedSummary}
-                    <h2 style="color: #27ae60; margin-top:0; font-size:1.4rem;">🟢 恭喜！您的肝龄状态良好</h2>
-                    <div style="text-align:center; margin:16px 0 20px;">
-                        <img src="images/%E7%BB%BF%E8%89%B2%20%28%E4%BD%8E%E9%A3%8E%E9%99%A9%3A%E4%BF%9D%E5%85%BB%E6%9C%9F%29.png" alt="低风险保养期肝脏" style="max-width:260px; width:75%; border-radius:16px; box-shadow:0 8px 28px rgba(39,174,96,0.30);" onerror="this.style.display='none'" />
-                        <div style="display:inline-block; margin-top:10px; background:#f0fff5; border:2px solid #27ae60; border-radius:20px; padding:6px 18px;">
-                            <span style="color:#27ae60; font-weight:700; font-size:0.95rem;">🟢 低风险 / 保养期</span>
-                        </div>
-                    </div>
-                    <p style="color:#555; line-height:1.8;">您目前的生活习惯对肝脏来说是友善的，排毒和代谢能力都在线！</p>
 
-                    <!-- 保养提醒 -->
-                    <div style="background:#f0fff5; border-left:4px solid #27ae60; border-radius:0 10px 10px 0; padding:18px 20px; margin:20px 0;">
-                        <p style="margin:0 0 10px; font-weight:700; color:#27ae60; font-size:1rem;">🛡️ 但保养比治疗更值钱</p>
-                        <p style="margin:0; color:#555; line-height:1.9; font-size:0.95rem;">
-                            很多人等到报告异常才开始担心，<br>
-                            那时候代价已经大很多了。<br><br>
-                            肝脏每天帮你解毒、代谢、产生能量——<br>
-                            它值得被好好照顾，<strong>趁它还健康的时候</strong>。
+                    <!-- 段 1：肝龄分析（恭喜版） -->
+                    <div style="background:#fff; border:2px solid #27ae60; border-radius:14px; padding:20px; margin-bottom:22px;">
+                        <p style="margin:0 0 8px; color:#27ae60; font-weight:800; font-size:1rem; letter-spacing:1px;">📊 第 1 段 · 你的肝龄分析</p>
+                        <p style="margin:0 0 12px; color:#222; line-height:1.85; font-size:0.97rem;">
+                            ${userName}，恭喜！<br>
+                            你的实际年龄是 <strong>${document.getElementById('userAge').value} 岁</strong>，<br>
+                            你的肝脏目前的运作状态相当于 <strong style="color:#27ae60; font-size:1.1rem;">${liverAge} 岁</strong> —— ${liverAge < userAgeNum ? `<strong>比实际还年轻 ${userAgeNum - liverAge} 岁</strong>` : (liverAge === userAgeNum ? `<strong>跟实际年龄持平</strong>` : `<strong>只比实际老 ${liverAge - userAgeNum} 岁</strong>`)}，状态非常好。
                         </p>
-                    </div>
-
-                    <!-- 先消炎再补肝保养版 -->
-                    <div style="background:#f0faf8; border:2px solid #154d45; border-radius:12px; padding:20px; margin:20px 0;">
-                        <p style="margin:0 0 14px; font-weight:700; color:#154d45; font-size:1.05rem;">💡 日常防护的正确方式</p>
-                        <p style="margin:0 0 12px; color:#666; font-size:0.95rem; line-height:1.8;">
-                            即使现在健康，熬夜、应酬、压力……<br>
-                            这些都会慢慢在肝脏积累微量炎症
-                        </p>
-                        <p style="margin:0; color:#333; font-weight:600; line-height:2; font-size:0.95rem;">
-                            ✅ "先消炎，再补肝"不只是治疗，也适用于日常防护：<br>
-                            <span style="color:#154d45;">持续减轻肝脏的发炎负担</span><br>
-                            <span style="color:#154d45;">维持细胞活力，让好状态长期持续</span>
-                        </p>
-                    </div>
-
-                    <hr style="border: 0; border-top: 1px dashed #a9dfbf; margin: 24px 0;">
-                    <h3 style="color: var(--primary-teal); margin-bottom: 5px;">🛡️ 日常防护疗程方案</h3>
-                    <div class="treatment-badge" style="background: linear-gradient(135deg, #eafaf1, #d5f5e3); border-color: #27ae60;">
-                        <div style="text-align:center;">
-                            <div class="box-count" style="color:#27ae60;">4</div>
-                            <div class="box-label">📦 盒子</div>
-                        </div>
-                        <div class="divider" style="background:#a9dfbf;"></div>
-                        <div style="text-align:center;">
-                            <div class="month-count" style="color:#27ae60;">2</div>
-                            <div class="month-label">🗓️ 个月疗程</div>
-                        </div>
-                    </div>
-                    <div class="product-img-wrap">
-                        <img src="images/package_4boxes.png" alt="Master Liv 4盒保养配套" style="max-width:100%; border-radius:12px;" />
-                    </div>
-                    <div class="outcome-box green-outcome">
-                        <h4 style="color: #27ae60;">✅ 坚持日常保养，您将持续保有：</h4>
-                        <ul>
-                            <li>🛡️ 肝脏防护力持续在线，抵抗熬夜损伤</li>
-                            <li>⚡ 精力充沛，长期维持好状态</li>
-                            <li>🍽️ 消化系统健康，营养吸收更好</li>
-                            <li>🔬 肝指数长期稳定在正常范围</li>
-                            <li>🌿 天然草本成分，安心日常使用</li>
-                        </ul>
-                    </div>
-                    <a href="${waLink}" target="_blank" class="btn btn-whatsapp">📲 Whatsapp PM 最新优惠</a>
-                    <p class="wa-subtext">✅ 免费咨询 &nbsp;·&nbsp; 无需付款 &nbsp;·&nbsp; 通常 5 分钟内回复</p>
-
-                    <!-- 成分介绍 -->
-                    <div style="margin-top:28px; padding-top:24px; border-top:2px dashed #e0e0e0;">
-                        <h3 style="color:#154d45; text-align:center; margin-bottom:6px; font-size:1.15rem;">🌿 为什么 Master Liv 能做到"先消炎，再补肝"？</h3>
-                        <p style="text-align:center; color:#888; font-size:0.88rem; margin-top:0; margin-bottom:20px;">两大核心成分，精准分工，协同修复</p>
-                        <div style="background:#fffbf0; border:2px solid #f1c40f; border-radius:14px; padding:18px 20px; margin-bottom:14px;">
-                            <div class="ingredient-card-inner">
-                                <img src="images/姜黄根 .jpg" alt="姜黄根 Turmeric Root" style="border:2px solid #f1c40f;">
-                                <div class="ingredient-text">
-                                    <p style="margin:0 0 6px; font-weight:700; color:#d35400; font-size:0.98rem;">第一步：姜黄根（Turmeric Root）— 消炎</p>
-                                    <p style="margin:0; color:#666; font-size:0.88rem; line-height:1.85;">
-                                        姜黄根含有高浓度<strong>姜黄素（Curcumin）</strong>，是天然最强效的消炎成分之一。<br>
-                                        能深入肝脏细胞，<strong>扑灭长期积累的慢性炎症</strong>，让发炎的肝脏先"平静下来"，才能真正开始修复。
-                                    </p>
-                                </div>
+                        <div style="text-align:center; margin:14px 0 8px;">
+                            <img src="images/%E7%BB%BF%E8%89%B2%20%28%E4%BD%8E%E9%A3%8E%E9%99%A9%3A%E4%BF%9D%E5%85%BB%E6%9C%9F%29.png" alt="低风险保养期肝脏" style="max-width:220px; width:70%; border-radius:14px; box-shadow:0 6px 22px rgba(39,174,96,0.30);" onerror="this.style.display='none'" />
+                            <div style="display:inline-block; margin-top:8px; background:#f0fff5; border:2px solid #27ae60; border-radius:20px; padding:5px 16px;">
+                                <span style="color:#27ae60; font-weight:700; font-size:0.9rem;">🟢 低风险 · 保养期</span>
                             </div>
                         </div>
-                        <div style="background:#f0faf8; border:2px solid #154d45; border-radius:14px; padding:18px 20px; margin-bottom:14px;">
-                            <div class="ingredient-card-inner">
-                                <img src="images/奶蓟草 .jpg" alt="奶蓟草 Milk Thistle" style="border:2px solid #154d45;">
-                                <div class="ingredient-text">
-                                    <p style="margin:0 0 6px; font-weight:700; color:#154d45; font-size:0.98rem;">第二步：奶蓟草（Milk Thistle）— 补肝</p>
-                                    <p style="margin:0; color:#666; font-size:0.88rem; line-height:1.85;">
-                                        奶蓟草含有<strong>水飞蓟素（Silymarin）</strong>，是全球医学界公认的护肝成分。<br>
-                                        能<strong>促进肝细胞再生</strong>，修护已受损的细胞，同时形成保护膜，防止毒素再次侵入。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div style="background:linear-gradient(135deg,#154d45,#0b3a34); color:white; border-radius:12px; padding:16px 18px; text-align:center;">
-                            <p style="margin:0 0 6px; font-weight:700; font-size:0.98rem;">⚡ 两者协同的完整逻辑</p>
-                            <p style="margin:0; font-size:0.88rem; opacity:0.9; line-height:1.85;">先消炎 → 肝脏环境干净了 → 补肝成分才真正被吸收<br>这才是逆转脂肪肝不走弯路的方法</p>
-                        </div>
-                        <a href="${waLink}" target="_blank" class="btn btn-whatsapp" style="margin-top:20px;">
-                            📲 Whatsapp PM 最新优惠
-                        </a>
-                        <p class="wa-subtext">✅ 免费咨询 &nbsp;·&nbsp; 无需付款 &nbsp;·&nbsp; 通常 5 分钟内回复</p>
+                        <p style="margin:10px 0 0; color:#666; font-size:0.88rem; line-height:1.7; font-style:italic; text-align:center;">＊ 肝龄不是医学诊断，是基于生活习惯与症状的健康评估指标</p>
                     </div>
+
+                    <!-- 段 2：维护提醒 -->
+                    <div style="background:#fff; border:1px solid #e8e8e8; border-radius:14px; padding:22px; margin-bottom:22px; border-top:4px solid #27ae60;">
+                        <p style="margin:0 0 10px; color:#27ae60; font-weight:800; font-size:1rem; letter-spacing:1px;">🛡️ 第 2 段 · 但你不能掉以轻心 —— 这才是关键</p>
+                        <p style="margin:0 0 12px; color:#222; line-height:1.85; font-size:0.95rem;">
+                            肝脏发炎是<strong>慢性累积的</strong>。<br>
+                            它不会今天好好的，明天突然出事。<br><br>
+                            真正可怕的是 ——<br>
+                            很多今天像你这样「肝龄良好」的人，<br>
+                            因为以为没事，3～5 年后体检才发现脂肪肝、肝指数飙高。
+                        </p>
+                        <div style="background:#f0fff5; border-left:3px solid #27ae60; border-radius:0 8px 8px 0; padding:12px 14px; margin-top:14px;">
+                            <p style="margin:0; color:#1e7e34; font-weight:700; font-size:0.95rem; line-height:1.7;">
+                                💡 关键洞察：保养比治疗便宜 10 倍。<br>
+                                <span style="color:#444; font-weight:500; font-size:0.9rem;">现在维护一个月的成本，等于将来发炎后修复一个礼拜的成本。</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 段 3：30 天自然护肝改善计划（6 大方向 - 轻量版）-->
+                    ${buildLifestylePlan('green')}
+
+                    <!-- 段 4：过渡桥（短 + customize）-->
+                    ${buildTransitionBridge('green')}
+
+                    <!-- 段 5：Master Liv pitch (合并 = it's what + why 4 盒保养 + 时间轴) -->
+                    ${buildMasterLivPitch('green')}
                 `;
             }
 
@@ -910,7 +1317,7 @@
                     <p style="text-align:center; color:#888; font-size:0.9rem; margin-top:0; margin-bottom:18px;">他们找到了原因，执行了方案 👇</p>
                     <div id="testimony-clone-target"></div>
                     <a href="${waLink}" target="_blank" class="btn btn-whatsapp" style="margin-top:20px;">
-                        📲 Whatsapp PM 最新优惠
+                        📲 安排 1 对 1 健康顾问咨询
                     </a>
                     <p class="wa-subtext">✅ 免费咨询 &nbsp;·&nbsp; 无需付款 &nbsp;·&nbsp; 通常 5 分钟内回复</p>
                 </div>
@@ -930,22 +1337,56 @@
     }
 
     // ── 预览模式 (URL 带 #preview 时自动跳到结果页) ───────────────
-    if (window.location.hash === '#preview') {
+    // 用法:
+    //   #preview                  → red (高风险) 默认
+    //   #preview-yellow           → yellow (中风险)
+    //   #preview-green            → green (低风险)
+    //   #preview-2400             → red, 渲染完跳到 scrollY=2400
+    //   #preview-yellow-2400      → yellow, scrollY=2400
+    if (window.location.hash.startsWith('#preview')) {
+        const hash = window.location.hash;
+        const isYellow = hash.indexOf('yellow') !== -1;
+        const isGreen = hash.indexOf('green') !== -1;
+        const scrollMatch = hash.match(/-(\d+)$/);
+        const previewScrollY = scrollMatch ? parseInt(scrollMatch[1]) : 0;
+
         setTimeout(function() {
             document.getElementById('userName').value = 'Lee (测试)';
             document.getElementById('userEmail').value = 'test@example.com';
+            document.getElementById('userPhone').value = '+60 12-345 6789';
             document.getElementById('userAge').value = '45-54岁';
-            ['q1','q2','q3','q4','q6','q7','q8','q9','q10'].forEach(function(name) {
-                var radios = document.getElementsByName(name);
-                for (var r of radios) { if (r.value === '0') { r.checked = true; break; } }
-            });
-            var q5 = document.getElementsByName('q5');
-            for (var r of q5) { if (r.value === '0') { r.checked = true; break; } }
+
+            // ── 按 risk level 设置 q1-q10 答案 ──
+            // red: 全部 0 分 → totalScore=0
+            // yellow: 一半 high risk + 一半 low risk → totalScore≈60
+            // green: 全部 low risk → totalScore=100
+            const setRadio = (name, val) => {
+                const radios = document.getElementsByName(name);
+                for (var r of radios) { if (r.value === String(val)) { r.checked = true; break; } }
+            };
+            // q5 的逻辑反向 (10=有运动好习惯, 0=没运动)
+            if (isGreen) {
+                ['q1','q2','q3','q4','q6','q7','q8','q9','q10'].forEach(n => setRadio(n, 10));
+                setRadio('q5', 10);
+            } else if (isYellow) {
+                // 6 项低风险 + 4 项高风险 → totalScore=60
+                ['q1','q2','q3','q4'].forEach(n => setRadio(n, 0));   // 4 项高风险
+                ['q6','q7','q8','q9','q10'].forEach(n => setRadio(n, 10)); // 5 项低风险
+                setRadio('q5', 10); // 有运动 → low risk
+            } else {
+                // red 默认
+                ['q1','q2','q3','q4','q6','q7','q8','q9','q10'].forEach(n => setRadio(n, 0));
+                setRadio('q5', 0);
+            }
+
             document.getElementById('big1').value = '体检发现肝指数/胆固醇偏高';
             document.getElementById('big2').value = '降低并稳定肝指数';
             document.getElementById('big3').value = '工作忙应酬多无法控制作息';
             document.getElementById('big4').value = '准备好完整疗程100%改善问题(RM7xx)';
             processQuiz();
+            if (previewScrollY > 0) {
+                setTimeout(function() { window.scrollTo({ top: previewScrollY, behavior: 'instant' }); }, 1500);
+            }
         }, 800);
     }
     // ─────────────────────────────────────────────────────────────
